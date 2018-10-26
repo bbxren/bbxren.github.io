@@ -1683,16 +1683,6 @@ pre .javascript .function {
   display: inline-block;
   margin: 0.8em 2em 0 2em;
 }
-#wechat:hover p {
-  animation: roll 0.1s 0 linear;
-  -webkit-animation: roll 0.1s 0 linear;
-  -moz-animation: roll 0.1s 0 linear;
-}
-#alipay:hover p {
-  animation: roll 0.1s 0 linear;
-  -webkit-animation: roll 0.1s 0 linear;
-  -moz-animation: roll 0.1s 0 linear;
-}
 #bitcoin:hover p {
   animation: roll 0.1s infinite linear;
   -webkit-animation: roll 0.1s infinite linear;
@@ -2152,7 +2142,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffeb46;
+  background: #6157ff;
 }
 .links-of-blogroll {
   font-size: 13px;
