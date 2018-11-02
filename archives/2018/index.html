@@ -92,7 +92,7 @@
   
     
     
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|lobster Two:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.cat.net/css?family=Lato:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|Roboto Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   
 
 
@@ -243,7 +243,9 @@
       
         
         <li class="menu-item menu-item-home">
-          <a href="/home" rel="section">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
             
             首页
           </a>
@@ -253,6 +255,8 @@
         <li class="menu-item menu-item-about">
           <a href="/about/" rel="section">
             
+              <i class="menu-item-icon fa fa-fw fa-android"></i> <br>
+            
             关于
           </a>
         </li>
@@ -260,6 +264,8 @@
         
         <li class="menu-item menu-item-tags">
           <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-star"></i> <br>
             
             标签
           </a>
@@ -269,6 +275,8 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories/" rel="section">
             
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>
+            
             分类
           </a>
         </li>
@@ -277,6 +285,8 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
             归档
           </a>
         </li>
@@ -284,6 +294,8 @@
         
         <li class="menu-item menu-item-设计">
           <a href="/design/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-apple"></i> <br>
             
             设计
           </a>
@@ -295,6 +307,8 @@
           
             <a href="javascript:;" class="popup-trigger">
           
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
             
             搜索
           </a>
@@ -381,7 +395,7 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/2018/10/25/hello-world/" itemprop="url">
+            <a class="post-title-link" href="/2018/10/25/hello world/" itemprop="url">
               
                 <span itemprop="name">Hello World</span>
               
@@ -464,6 +478,15 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
 
           </nav>
 
@@ -494,7 +517,7 @@
                   <span class="links-of-author-item">
                     <a href="https://www.zcool.com.cn/u/17094501" target="_blank" title="站酷">
                       
-                        <i class="fa fa-fw fa-home"></i>站酷</a>
+                        <i class="fa fa-fw fa-anchor"></i>站酷</a>
                   </span>
                 
                   <span class="links-of-author-item">
@@ -506,13 +529,13 @@
                   <span class="links-of-author-item">
                     <a href="https://user.qzone.qq.com/1205418487/main" target="_blank" title="QQZone F">
                       
-                        <i class="fa fa-fw fa-globe"></i>QQZone F</a>
+                        <i class="fa fa-fw fa-qq"></i>QQZone F</a>
                   </span>
                 
                   <span class="links-of-author-item">
                     <a href="https://user.qzone.qq.com/365905891/main" target="_blank" title="QQZone S">
                       
-                        <i class="fa fa-fw fa-globe"></i>QQZone S</a>
+                        <i class="fa fa-fw fa-qq"></i>QQZone S</a>
                   </span>
                 
             </div>
@@ -557,6 +580,8 @@
           
 
         </div>
+        <br>
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="298" height="52" src="//music.163.com/outchain/player?type=2&id=421885394&auto=1&height=32"></iframe>
       </section>
 
       
@@ -587,7 +612,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">73</span>
+    <span title="Site words total count">272</span>
   
 </div>
  <!--统计start-->
@@ -762,6 +787,28 @@
 
 
 
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'tHfpa2K19ShXSMwkFTvSuLDB-gzGzoHsz',
+        appKey: 'fPn5WXlp0ym9nDWtpnYnVSty',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
 
 
   
@@ -798,6 +845,6 @@
 
   
 
-  undefined
-<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body>
+  <script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":true,"debug":false,"model":{"jsonPath":"live2d-widget-model-zhiku"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false});</script>
+</body>
 </html>
