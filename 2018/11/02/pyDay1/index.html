@@ -133,18 +133,18 @@
 
 
 
-<meta name="description" content="python基础语法及案例">
+<meta name="description" content="python for basic data type">
 <meta name="keywords" content="Python">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python First Day">
 <meta property="og:url" content="http://bbxren.top/2018/11/02/pyDay1/index.html">
 <meta property="og:site_name" content="我是王文徽徽徽呀！">
-<meta property="og:description" content="python基础语法及案例">
+<meta property="og:description" content="python for basic data type">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-05T09:21:42.121Z">
+<meta property="og:updated_time" content="2018-11-12T15:00:56.975Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python First Day">
-<meta name="twitter:description" content="python基础语法及案例">
+<meta name="twitter:description" content="python for basic data type">
 
 
 
@@ -491,7 +491,7 @@
 
           
               <div class="post-description">
-                  python基础语法及案例
+                  python for basic data type
               </div>
           
 
@@ -642,7 +642,7 @@
 <p>[‘python’, ‘ruby’, ‘c’, ‘c++’, ‘swift’]<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">todos = <span class="string">"download python, install, download ide, learn"</span></span><br><span class="line">todos.split(<span class="string">', '</span>)</span><br></pre></td></tr></table></figure></p>
 <p>[‘download python’, ‘install’, ‘download ide’, ‘learn’]<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'###'</span>.join([<span class="string">'download python'</span>, <span class="string">'install'</span>, <span class="string">'download ide'</span>, <span class="string">'learn'</span>])</span><br></pre></td></tr></table></figure></p>
 <p>‘download python###install###download ide###learn’</p>
-<h3 id="Substitue-居中居左排版"><a href="#Substitue-居中居左排版" class="headerlink" title="Substitue ** 居中居左排版"></a>Substitue ** 居中居左排版</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">s = <span class="string">'I like C. I like C++. I like Python'</span></span><br><span class="line">s.replace(<span class="string">'like'</span>, <span class="string">'hate'</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="Substitue"><a href="#Substitue" class="headerlink" title="Substitue"></a>Substitue</h3><p>  <strong><em>#居中居左排版</em></strong><br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">s = <span class="string">'I like C. I like C++. I like Python'</span></span><br><span class="line">s.replace(<span class="string">'like'</span>, <span class="string">'hate'</span>)</span><br></pre></td></tr></table></figure></p>
 <p>‘I hate C. I hate C++. I hate Python’<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">s.replace(<span class="string">'like'</span>, <span class="string">'hate'</span>, <span class="number">1</span>)</span><br></pre></td></tr></table></figure></p>
 <p>‘I hate C. I like C++. I like Python’</p>
 <h3 id="Layout"><a href="#Layout" class="headerlink" title="Layout"></a>Layout</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">align = <span class="string">'Learn how to align'</span></span><br><span class="line">align.center(<span class="number">30</span>)</span><br></pre></td></tr></table></figure>
@@ -650,26 +650,32 @@
 <p>‘Learn how to align            ‘<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">align.rjust(<span class="number">30</span>)</span><br></pre></td></tr></table></figure></p>
 <p>‘            Learn how to align’<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#chars -- 移除字符串头尾指定的字符序列。</span></span><br><span class="line"><span class="comment">#str.strip([chars]);</span></span><br><span class="line">ralign = align.rjust(<span class="number">30</span>)</span><br><span class="line">ralign.strip()</span><br></pre></td></tr></table></figure></p>
 <p>‘Learn how to align’</p>
-<h3 id="Other-useful-tools"><a href="#Other-useful-tools" class="headerlink" title="Other useful tools"></a>Other useful tools</h3><p>py_desc = “Python description: Python is a programming language that lets you work quickly and integrate systems more effectively.”<br>py_desc.startswith(‘Python’)<br>True</p>
-<p>py_desc.endswith(‘effectively.’)<br>True</p>
-<p>py_desc.find(‘language’) #找到language的起始位置<br>​<br>44</p>
-<p>py_desc.isalnum()<br>False</p>
-<p>py_desc.count(“Python”) # 出现次数<br>2</p>
-<p>py_desc.strip(‘.’)<br>‘Python description: Python is a programming language that lets you work quickly and integrate systems more effectively’</p>
-<p>py_desc.upper()<br>‘PYTHON DESCRIPTION: PYTHON IS A PROGRAMMING LANGUAGE THAT LETS YOU WORK QUICKLY AND INTEGRATE SYSTEMS MORE EFFECTIVELY.’</p>
-<p>py_desc.title()<br>‘Python Description: Python Is A Programming Language That Lets You Work Quickly And Integrate Systems More Effectively.’<br>in and out~~</p>
-<h3 id="Read-user-input"><a href="#Read-user-input" class="headerlink" title="Read user input"></a>Read user input</h3><p>age = input(“How old are you?”)<br>height = input(“How tall are you?”)<br>weight = input(“How much do you weigh?”)<br>​<br>print(“So, you’re %s old, %s tall and %s heavy.” % (age, height, weight))<br>How old are you?10<br>How tall are you?20<br>How much do you weigh?30<br>So, you’re 10 old, 20 tall and 30 heavy.</p>
-<h3 id="Read-user-input-1"><a href="#Read-user-input-1" class="headerlink" title="Read user input"></a>Read user input</h3><p>age = input(“How old are you?\n”)<br>height = input(“How tall are you?\n”)<br>weight = input(“How much do you weigh?\n”)<br>​<br>print(“So, you’re %s yers old, %s meters tall and %s kg heavy.” % (age, height, weight))<br>How old are you?<br>10<br>How tall are you?<br>20<br>How much do you weigh?<br>30<br>So, you’re 10 yers old, 20 meters tall and 30 kg heavy.<br>字符串格式输出:<br><a href="https://pyformat.info/#string_pad_align" target="_blank" rel="noopener">https://pyformat.info/#string_pad_align</a><br><a href="https://dbader.org/blog/python-string-formatting" target="_blank" rel="noopener">https://dbader.org/blog/python-string-formatting</a><br><a href="https://docs.python.org/3.6/library/string.html" target="_blank" rel="noopener">https://docs.python.org/3.6/library/string.html</a></p>
-<p>New Style in Python 3.6</p>
-<p>print(‘%s %s’ % (‘one’, ‘two’))<br>print(‘{} {}’.format(‘one’, ‘two’))<br>print(‘%d %d’ % (1, 2))<br>print(‘{} {}’.format(1, 2))</p>
-<p>print(‘{1} {0}’.format(‘one’, ‘two’))</p>
-<p>a = 5<br>b = 10<br>print(f’Five plus ten is {a + b} and not {2 * (a + b)}.’)<br>Five plus ten is 15 and not 30.</p>
-<p>name = “Joshua”<br>question = “hello”<br>print(f”Hello, {name}! How’s it {question}?”)<br>Hello, Joshua! How’s it hello?</p>
-<h2 id="小白容易踩的坑！！！"><a href="#小白容易踩的坑！！！" class="headerlink" title="小白容易踩的坑！！！"></a>小白容易踩的坑！！！</h2><blockquote>
+<h3 id="Other-useful-tools"><a href="#Other-useful-tools" class="headerlink" title="Other useful tools"></a>Other useful tools</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">py_desc = <span class="string">"Python description: Python is a programming language that lets you work quickly and integrate systems more effectively."</span></span><br><span class="line">py_desc.startswith(<span class="string">'Python'</span>)</span><br></pre></td></tr></table></figure>
+<p>True<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">py_desc.endswith(<span class="string">'effectively.'</span>)</span><br></pre></td></tr></table></figure></p>
+<p>True<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">py_desc.find(<span class="string">'language'</span>) <span class="comment">#找到language的起始位置</span></span><br><span class="line">​</span><br></pre></td></tr></table></figure></p>
+<p>44<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">py_desc.isalnum()</span><br></pre></td></tr></table></figure></p>
+<p>False<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">py_desc.count(<span class="string">"Python"</span>) <span class="comment"># 出现次数</span></span><br></pre></td></tr></table></figure></p>
+<p>2<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">py_desc.strip(<span class="string">'.'</span>)</span><br></pre></td></tr></table></figure></p>
+<p>‘Python description: Python is a programming language that lets you work quickly and integrate systems more effectively’<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">py_desc.upper()</span><br></pre></td></tr></table></figure></p>
+<p>‘PYTHON DESCRIPTION: PYTHON IS A PROGRAMMING LANGUAGE THAT LETS YOU WORK QUICKLY AND INTEGRATE SYSTEMS MORE EFFECTIVELY.’<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">py_desc.title()</span><br></pre></td></tr></table></figure></p>
+<p>‘Python Description: Python Is A Programming Language That Lets You Work Quickly And Integrate Systems More Effectively.’</p>
+<h3 id="in-and-out"><a href="#in-and-out" class="headerlink" title="in and out~~"></a>in and out~~</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">### Read user input ###</span></span><br><span class="line">age = input(<span class="string">"How old are you?"</span>)</span><br><span class="line">height = input(<span class="string">"How tall are you?"</span>)</span><br><span class="line">weight = input(<span class="string">"How much do you weigh?"</span>)</span><br><span class="line">​print(<span class="string">"So, you're %s old, %s tall and %s heavy."</span> % (age, height, weight))</span><br></pre></td></tr></table></figure>
+<p>How old are you?10<br>How tall are you?20<br>How much do you weigh?30<br>So, you’re 10 old, 20 tall and 30 heavy.<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">### Read user input ###</span></span><br><span class="line">age = input(<span class="string">"How old are you?\n"</span>)</span><br><span class="line">height = input(<span class="string">"How tall are you?\n"</span>)</span><br><span class="line">weight = input(<span class="string">"How much do you weigh?\n"</span>)</span><br><span class="line">​print(<span class="string">"So, you're %s yers old, %s meters tall and %s kg heavy."</span> % (age, height, weight))</span><br></pre></td></tr></table></figure></p>
+<p>How old are you?<br>10<br>How tall are you?<br>20<br>How much do you weigh?<br>30<br>So, you’re 10 yers old, 20 meters tall and 30 kg heavy.<br>字符串格式输出:<br><a href="https://pyformat.info/#string_pad_align" target="_blank" rel="noopener">https://pyformat.info/#string_pad_align</a><br><a href="https://dbader.org/blog/python-string-formatting" target="_blank" rel="noopener">https://dbader.org/blog/python-string-formatting</a><br><a href="https://docs.python.org/3.6/library/string.html" target="_blank" rel="noopener">https://docs.python.org/3.6/library/string.html</a></p>
+<h3 id="New-Style-in-Python-3-6"><a href="#New-Style-in-Python-3-6" class="headerlink" title="New Style in Python 3.6"></a>New Style in Python 3.6</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">'%s %s'</span> % (<span class="string">'one'</span>, <span class="string">'two'</span>))</span><br><span class="line">print(<span class="string">'&#123;&#125; &#123;&#125;'</span>.format(<span class="string">'one'</span>, <span class="string">'two'</span>))</span><br><span class="line">print(<span class="string">'%d %d'</span> % (<span class="number">1</span>, <span class="number">2</span>))</span><br><span class="line">print(<span class="string">'&#123;&#125; &#123;&#125;'</span>.format(<span class="number">1</span>, <span class="number">2</span>))</span><br></pre></td></tr></table></figure>
+<p>one two<br>one two<br>1 2<br>1 2<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">'&#123;1&#125; &#123;0&#125;'</span>.format(<span class="string">'one'</span>, <span class="string">'two'</span>))</span><br></pre></td></tr></table></figure></p>
+<p>two one<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="number">5</span></span><br><span class="line">b = <span class="number">10</span></span><br><span class="line">print(<span class="string">f'Five plus ten is <span class="subst">&#123;a + b&#125;</span> and not <span class="subst">&#123;<span class="number">2</span> * (a + b)&#125;</span>.'</span>)</span><br></pre></td></tr></table></figure></p>
+<p>Five plus ten is 15 and not 30.<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">name = <span class="string">"Joshua"</span></span><br><span class="line">question = <span class="string">"hello"</span></span><br><span class="line">print(<span class="string">f"Hello, <span class="subst">&#123;name&#125;</span>! How's it <span class="subst">&#123;question&#125;</span>?"</span>)</span><br></pre></td></tr></table></figure></p>
+<p>Hello, Joshua! How’s it hello?</p>
+<h2 id="小白容易踩的坑"><a href="#小白容易踩的坑" class="headerlink" title="小白容易踩的坑"></a>小白容易踩的坑</h2><blockquote>
 <p>excepted an indented block</p>
 </blockquote>
 <p>1.使用IF条件时需要注意缩进，Python中没有分号，通过缩进来表示上下级从属关系。<br>2.冒号后面需要写上一定内容</p>
-<h3 id="笔记来源：-wanmen"><a href="#笔记来源：-wanmen" class="headerlink" title="笔记来源： wanmen"></a>笔记来源： wanmen</h3><h3 id="排版及修改：-Bbxren"><a href="#排版及修改：-Bbxren" class="headerlink" title="排版及修改： Bbxren"></a>排版及修改： Bbxren</h3><p>​</p>
+<ul>
+<li>笔记来源： wanmen</li>
+<li>排版及修改： Bbxren</li>
+</ul>
+<p>​</p>
 
       
     </div>
@@ -688,7 +694,7 @@
   <p><span>本文标题:</span><a href="/2018/11/02/pyDay1/">Python First Day</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Bbxren 的个人博客">Bbxren</a></p>
   <p><span>发布时间:</span>2018年11月02日 - 10:11</p>
-  <p><span>最后更新:</span>2018年11月05日 - 17:11</p>
+  <p><span>最后更新:</span>2018年11月12日 - 23:11</p>
   <p><span>原始链接:</span><a href="/2018/11/02/pyDay1/" title="Python First Day">http://bbxren.top/2018/11/02/pyDay1/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://bbxren.top/2018/11/02/pyDay1/" aria-label="复制成功！"></i></span>
   </p>
@@ -787,6 +793,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2018/11/06/pyDay2/" rel="prev" title="Quiz 基本语法 及 变量">
+                Quiz 基本语法 及 变量 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -875,7 +885,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -897,7 +907,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -1009,7 +1019,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Print-“hello-world”"><span class="nav-number">1.</span> <span class="nav-text">Print(“hello world”)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Grammer"><span class="nav-number">2.</span> <span class="nav-text">Grammer</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Syntax"><span class="nav-number">3.</span> <span class="nav-text">Syntax</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Semantics"><span class="nav-number">4.</span> <span class="nav-text">Semantics</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Variable-Names-and-Objects"><span class="nav-number">4.1.</span> <span class="nav-text">Variable, Names, and Objects</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Object"><span class="nav-number">4.1.1.</span> <span class="nav-text">Object</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Type"><span class="nav-number">4.1.2.</span> <span class="nav-text">Type</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Variable"><span class="nav-number">4.1.3.</span> <span class="nav-text">Variable</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Variable-and-Value"><span class="nav-number">5.</span> <span class="nav-text">Variable and Value</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Assign-New-Value-Mutable"><span class="nav-number">6.</span> <span class="nav-text">Assign New Value, Mutable</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Data-Type"><span class="nav-number">7.</span> <span class="nav-text">Data Type</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Integers"><span class="nav-number">7.1.</span> <span class="nav-text">Integers</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#How-Big-Is-an-int"><span class="nav-number">7.1.1.</span> <span class="nav-text">How Big Is an int?</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Float"><span class="nav-number">7.2.</span> <span class="nav-text">Float</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Tip-You-may-use-type-variable-to-get-the-type-of-an-variable-For-example-type-1-will-return-int"><span class="nav-number">7.2.1.</span> <span class="nav-text">Tip:You may use type(variable) to get the type of an variable. For example, type(1) will return int.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Math-Functions"><span class="nav-number">7.2.2.</span> <span class="nav-text">Math Functions</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Boolean"><span class="nav-number">7.3.</span> <span class="nav-text">Boolean</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Strings"><span class="nav-number">7.4.</span> <span class="nav-text">Strings</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Type-Conversions"><span class="nav-number">7.4.1.</span> <span class="nav-text">Type Conversions</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Combine-amp-Duplicate"><span class="nav-number">7.4.2.</span> <span class="nav-text">Combine &amp; Duplicate</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Extract-amp-Slice"><span class="nav-number">7.4.3.</span> <span class="nav-text">Extract &amp;Slice</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Split-amp-Join"><span class="nav-number">7.4.4.</span> <span class="nav-text">Split &amp; Join</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Substitue-居中居左排版"><span class="nav-number">7.4.5.</span> <span class="nav-text">Substitue ** 居中居左排版</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Layout"><span class="nav-number">7.4.6.</span> <span class="nav-text">Layout</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Other-useful-tools"><span class="nav-number">7.4.7.</span> <span class="nav-text">Other useful tools</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Read-user-input"><span class="nav-number">7.4.8.</span> <span class="nav-text">Read user input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Read-user-input-1"><span class="nav-number">7.4.9.</span> <span class="nav-text">Read user input</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小白容易踩的坑！！！"><span class="nav-number">7.5.</span> <span class="nav-text">小白容易踩的坑！！！</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#笔记来源：-wanmen"><span class="nav-number">7.5.1.</span> <span class="nav-text">笔记来源： wanmen</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#排版及修改：-Bbxren"><span class="nav-number">7.5.2.</span> <span class="nav-text">排版及修改： Bbxren</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Print-“hello-world”"><span class="nav-number">1.</span> <span class="nav-text">Print(“hello world”)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Grammer"><span class="nav-number">2.</span> <span class="nav-text">Grammer</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Syntax"><span class="nav-number">3.</span> <span class="nav-text">Syntax</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Semantics"><span class="nav-number">4.</span> <span class="nav-text">Semantics</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Variable-Names-and-Objects"><span class="nav-number">4.1.</span> <span class="nav-text">Variable, Names, and Objects</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Object"><span class="nav-number">4.1.1.</span> <span class="nav-text">Object</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Type"><span class="nav-number">4.1.2.</span> <span class="nav-text">Type</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Variable"><span class="nav-number">4.1.3.</span> <span class="nav-text">Variable</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Variable-and-Value"><span class="nav-number">5.</span> <span class="nav-text">Variable and Value</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Assign-New-Value-Mutable"><span class="nav-number">6.</span> <span class="nav-text">Assign New Value, Mutable</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Data-Type"><span class="nav-number">7.</span> <span class="nav-text">Data Type</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Integers"><span class="nav-number">7.1.</span> <span class="nav-text">Integers</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#How-Big-Is-an-int"><span class="nav-number">7.1.1.</span> <span class="nav-text">How Big Is an int?</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Float"><span class="nav-number">7.2.</span> <span class="nav-text">Float</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Tip-You-may-use-type-variable-to-get-the-type-of-an-variable-For-example-type-1-will-return-int"><span class="nav-number">7.2.1.</span> <span class="nav-text">Tip:You may use type(variable) to get the type of an variable. For example, type(1) will return int.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Math-Functions"><span class="nav-number">7.2.2.</span> <span class="nav-text">Math Functions</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Boolean"><span class="nav-number">7.3.</span> <span class="nav-text">Boolean</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Strings"><span class="nav-number">7.4.</span> <span class="nav-text">Strings</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Type-Conversions"><span class="nav-number">7.4.1.</span> <span class="nav-text">Type Conversions</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Combine-amp-Duplicate"><span class="nav-number">7.4.2.</span> <span class="nav-text">Combine &amp; Duplicate</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Extract-amp-Slice"><span class="nav-number">7.4.3.</span> <span class="nav-text">Extract &amp;Slice</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Split-amp-Join"><span class="nav-number">7.4.4.</span> <span class="nav-text">Split &amp; Join</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Substitue"><span class="nav-number">7.4.5.</span> <span class="nav-text">Substitue</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Layout"><span class="nav-number">7.4.6.</span> <span class="nav-text">Layout</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Other-useful-tools"><span class="nav-number">7.4.7.</span> <span class="nav-text">Other useful tools</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#in-and-out"><span class="nav-number">7.4.8.</span> <span class="nav-text">in and out~~</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#New-Style-in-Python-3-6"><span class="nav-number">7.4.9.</span> <span class="nav-text">New Style in Python 3.6</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小白容易踩的坑"><span class="nav-number">7.5.</span> <span class="nav-text">小白容易踩的坑</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -1043,7 +1053,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">2.1k</span>
+    <span title="Site words total count">4.7k</span>
   
 </div>
  <!--统计start-->
