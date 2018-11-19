@@ -141,7 +141,7 @@
 <meta property="og:site_name" content="我是王文徽徽徽呀！">
 <meta property="og:description" content="python基础语法及案例">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-02T03:13:24.531Z">
+<meta property="og:updated_time" content="2018-11-05T09:21:42.121Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python First Day">
 <meta name="twitter:description" content="python基础语法及案例">
@@ -467,7 +467,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1.7k
+                  1.8k
                 </span>
               
 
@@ -508,117 +508,149 @@
       
 
       
-        <h1 id="Print-“hello-world”"><a href="#Print-“hello-world”" class="headerlink" title="Print(“hello world”)"></a>Print(“hello world”)</h1><p>print(“Hello World! 你好,世界! Hola mundo!”)<br>Hello World! 你好,世界! Hola mundo!</p>
-<p>print(“Hello World!”)<br>print(“Hello Again”)<br>Hello World!<br>Hello Again</p>
-<p>print(“This is the 3rd line, \n”,<br>      “and this is also the 3rd line.”)<br>This is the 3rd line,<br> and this is also the 3rd line.</p>
-<p>print(“This is the 3rd line, \<br>and this is also the 3rd line.”)<br>This is the 3rd line, and this is also the 3rd line.<br>Grammer<br>Expression -&gt; Expression Operator Expression</p>
+        <h1 id="Print-“hello-world”"><a href="#Print-“hello-world”" class="headerlink" title="Print(“hello world”)"></a>Print(“hello world”)</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">"Hello World! 你好,世界! Hola mundo!"</span>);</span><br></pre></td></tr></table></figure>
+<p>Hello World! 你好,世界! Hola mundo!<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">"Hello World!"</span>)</span><br><span class="line">print(<span class="string">"Hello Again"</span>)</span><br></pre></td></tr></table></figure></p>
+<p>Hello World!<br>Hello Again<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">"This is the 3rd line, \n"</span>,</span><br><span class="line">      <span class="string">"and this is also the 3rd line."</span>)</span><br><span class="line">This <span class="keyword">is</span> the <span class="number">3</span>rd line, </span><br><span class="line"> <span class="keyword">and</span> this <span class="keyword">is</span> also the <span class="number">3</span>rd line.</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">"This is the 3rd line, \</span></span><br><span class="line"><span class="string">and this is also the 3rd line."</span>)</span><br></pre></td></tr></table></figure>
+<p>This is the 3rd line, and this is also the 3rd line.</p>
+<h1 id="Grammer"><a href="#Grammer" class="headerlink" title="Grammer"></a>Grammer</h1><p>Expression -&gt; Expression Operator Expression</p>
 <p>Expression -&gt; Number</p>
 <p>Operator -&gt; +, - , * , /</p>
 <p>Number -&gt; 0,1,2,3,4</p>
-<p>print(4-5)<br>-1</p>
-<p>print(8 + )<br>  File “<ipython-input-10-431bcf9f6328>“, line 1<br>    print(8 + )<br>              ^<br>SyntaxError: invalid syntax</ipython-input-10-431bcf9f6328></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="number">4</span><span class="number">-5</span>)</span><br><span class="line"><span class="number">-1</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="number">8</span> + )</span><br></pre></td></tr></table></figure>
+<p>  File “<ipython-input-10-431bcf9f6328>“, line 1<br>    print(8 + )<br>              ^<br>SyntaxError: invalid syntax</ipython-input-10-431bcf9f6328></p>
 <p>刘翔能跑多快？110米跨栏，13秒， 速度= 100米/13秒</p>
-<p>110/12.97<br>8.481110254433307<br>Syntax<br>PEP8</p>
-<p>naming</p>
-<p>public int numberOfCars = 34;         # Java<br>const numberOfCars = 34;          # JavaScript</p>
-<p>number_of_cars = 34 # Python</p>
-<h1 id="there-is-no-and-there-is-no"><a href="#there-is-no-and-there-is-no" class="headerlink" title="there is no { } and there is no ;"></a>there is no { } and there is no ;</h1><p>x = 8<br>if x &lt; 7:<br>print(x)<br>​<br>  File “<ipython-input-34-b27816ef1c10>“, line 4<br>    print(x)<br>        ^<br>IndentationError: expected an indented block</ipython-input-34-b27816ef1c10></p>
-<p>if x &lt; 7:<br>print(“x is smaller than 7”)<br>  File “<ipython-input-12-6623bae93a8b>“, line 2<br>    print(“x is smaller than 7”)<br>        ^<br>IndentationError: expected an indented block</ipython-input-12-6623bae93a8b></p>
-<p>Semantics</p>
-<p>x=8</p>
-<p>if x &lt; 7:<br>    print(“x is smaller than 7”)<br>​<br>    print(“x is bigger than 7”)<br>​<br>Variable, Names, and Objects<br>In Python, everything is implemented as an object.</p>
-<p>Object<br>We will come back to what an object is later when we talk about Object Oriented Programming. For now, you may just think an object as a box that contains a piece of data.</p>
-<p>Type<br>Type defines what operations can be done on an object (data). For example, we know that numbers can be added together.</p>
-<p>Variable<br>Variable and Value<br>变量 和 值</p>
-<p>speed_of_liuxiang=110/12.97<br>distance= 1000</p>
-<p>time = distance/speed_of_liuxiang<br>print(time)<br>print(time/60)<br>117.9090909090909<br>1.965151515151515<br>Assign New Value, Mutable<br>= is assigment</p>
-<p>&lt;=======</p>
-<p>This is how we define variables in Python.</p>
-<p>In Python, variables are just names. Assignment does not copy a value; it just attaches a name to the object that contains the data. The name is a reference to a thing rather than the thing itself. Think of a name as a sticky note.</p>
-<p>Names stick to objects</p>
-<p>speed_of_joshua=110/10<br>time = distance/speed_of_joshua<br>print(time)<br>​<br>90.9090909090909</p>
-<p>time = time-10<br>print(time)<br>80.9090909090909<br>Data Type<br>In this notebook, you will learn the concept of Variabels, Names and Object. And also 4 built-in data types in Python:</p>
-<p>Integer (int)<br>Float (float)<br>Boolean (bool)<br>String (str)<br>Integers</p>
-<p>123<br>123</p>
-<p>05<br>  File “<ipython-input-30-b139c77ba8b1>“, line 1<br>    05<br>     ^<br>SyntaxError: invalid token</ipython-input-30-b139c77ba8b1></p>
-<p>123,456,789<br>(123, 456, 789)<br>Integer Operations<br><em>Tips: </em></p>
-<p>You may use print(variable) to print the value of variables in Python3, no matter what type of vairbale it is. Also, print(var1, var2) will print out the value of var1 and var2, separated by a white space.<br>In REPL, the result of the last operations will be printed out automatically</p>
-<p>1 + 2</p>
-<p>a = 5<br>a += 2<br>a<br>7</p>
-<p>a = 5<br>a = a - 3<br>a</p>
-<p>9 // 5<br>1</p>
-<p>9 % 5<br>4<br>优先权</p>
-<p>2 + 3 * 4<br>14<br>How Big Is an int?<br>In Python2, the size of an int was limited to 32 bits, which is enough to store an integer from -2,147,483,648 to 2,147,483,647. A long can store 64 bits. Integers larger than the range will cause Integer Overflow.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">110</span>/<span class="number">12.97</span></span><br></pre></td></tr></table></figure>
+<p>8.481110254433307</p>
+<blockquote>
+<h1 id="Syntax"><a href="#Syntax" class="headerlink" title="Syntax"></a>Syntax</h1><p><a href="https://www.python.org/dev/peps/pep-0008/" target="_blank" rel="noopener">PEP8</a><br>naming<br> public int numberOfCars = 34;         # Java<br> const numberOfCars = 34;          # JavaScript</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">number_of_cars = <span class="number">34</span> <span class="comment"># Python</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># there is no &#123; &#125; and there is no ;</span></span><br><span class="line">x = <span class="number">6</span></span><br><span class="line"><span class="keyword">if</span> x &lt; <span class="number">7</span>:</span><br><span class="line">   print(x)</span><br><span class="line">​</span><br><span class="line">``` </span><br><span class="line"><span class="number">6</span></span><br><span class="line">```python</span><br><span class="line"><span class="keyword">if</span> x &lt; <span class="number">7</span>:</span><br><span class="line">   print(<span class="string">"x is smaller than 7"</span>)</span><br></pre></td></tr></table></figure>
+<p>x is smaller than 7</p>
+<h1 id="Semantics"><a href="#Semantics" class="headerlink" title="Semantics"></a>Semantics</h1><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="number">8</span></span><br><span class="line"><span class="keyword">if</span> x &lt; <span class="number">7</span>:</span><br><span class="line">    print(<span class="string">"x is smaller than 7"</span>)   </span><br><span class="line">​    print(<span class="string">"x is bigger than 7"</span>)</span><br><span class="line">​</span><br></pre></td></tr></table></figure>
+<h2 id="Variable-Names-and-Objects"><a href="#Variable-Names-and-Objects" class="headerlink" title="Variable, Names, and Objects"></a>Variable, Names, and Objects</h2><p>In Python, everything is implemented as an <strong>object</strong>.</p>
+<h3 id="Object"><a href="#Object" class="headerlink" title="Object"></a>Object</h3><p>We will come back to what an object is later when we talk about Object Oriented Programming. For now, you may just think an object as a box that contains a piece of data.</p>
+<h3 id="Type"><a href="#Type" class="headerlink" title="Type"></a>Type</h3><p>Type defines what operations can be done on an object (data). For example, we know that numbers can be added together.</p>
+<h3 id="Variable"><a href="#Variable" class="headerlink" title="Variable"></a>Variable</h3><h1 id="Variable-and-Value"><a href="#Variable-and-Value" class="headerlink" title="Variable and Value"></a>Variable and Value</h1><p>变量 和 值</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">speed_of_liuxiang=<span class="number">110</span>/<span class="number">12.97</span></span><br><span class="line">distance= <span class="number">1000</span></span><br><span class="line">time = distance/speed_of_liuxiang</span><br><span class="line">print(time)</span><br><span class="line">print(time/<span class="number">60</span>)</span><br></pre></td></tr></table></figure>
+<p>117.9090909090909<br>1.965151515151515</p>
+<h1 id="Assign-New-Value-Mutable"><a href="#Assign-New-Value-Mutable" class="headerlink" title="Assign New Value, Mutable"></a>Assign New Value, Mutable</h1><p>This is how we define variables in Python.<br>In Python, variables are just names. Assignment does not copy a value; it just attaches a name to the object that contains the data. The name is a reference to a thing rather than the thing itself. Think of a name as a sticky note.</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">speed_of_joshua=<span class="number">110</span>/<span class="number">10</span></span><br><span class="line">time = distance/speed_of_joshua</span><br><span class="line">print(time)</span><br><span class="line">​</span><br></pre></td></tr></table></figure>
+<p>90.9090909090909<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">time = time<span class="number">-10</span></span><br><span class="line">print(time)</span><br><span class="line"><span class="number">80.9090909090909</span></span><br></pre></td></tr></table></figure></p>
+<h1 id="Data-Type"><a href="#Data-Type" class="headerlink" title="Data Type"></a>Data Type</h1><p>In this notebook, you will learn the concept of <strong>Variabels</strong>, <strong>Names</strong> and <strong>Object</strong>. And also 4 built-in data types in Python: </p>
+<ul>
+<li>Integer (int)</li>
+<li>Float (float)</li>
+<li>Boolean (bool)</li>
+<li>String (str)</li>
+</ul>
+<h2 id="Integers"><a href="#Integers" class="headerlink" title="Integers"></a>Integers</h2><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">123</span></span><br></pre></td></tr></table></figure>
+<p>123<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">05</span></span><br></pre></td></tr></table></figure></p>
+<p>  File “<ipython-input-30-b139c77ba8b1>“, line 1<br>    05<br>     ^<br>SyntaxError: invalid token</ipython-input-30-b139c77ba8b1></p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">123</span>,<span class="number">456</span>,<span class="number">789</span></span><br></pre></td></tr></table></figure>
+<p>(123, 456, 789)</p>
+<p>###Integer Operations<br><em>Tips: </em><br>You may use print(variable) to print the value of variables in Python3, no matter what type of vairbale it is. Also, print(var1, var2) will print out the value of var1 and var2, separated by a white space.<br>In REPL, the result of the last operations will be printed out automatically<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span> + <span class="number">2</span></span><br></pre></td></tr></table></figure></p>
+<p>3<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="number">5</span></span><br><span class="line">a += <span class="number">2</span></span><br><span class="line">a</span><br></pre></td></tr></table></figure></p>
+<p>7<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="number">5</span></span><br><span class="line">a = a - <span class="number">3</span></span><br><span class="line">a</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">9</span> // <span class="number">5</span></span><br></pre></td></tr></table></figure>
+<p>1<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">9</span> % <span class="number">5</span></span><br></pre></td></tr></table></figure></p>
+<p>4<br>优先权</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">2</span> + <span class="number">3</span> * <span class="number">4</span></span><br></pre></td></tr></table></figure>
+<p>14</p>
+<h3 id="How-Big-Is-an-int"><a href="#How-Big-Is-an-int" class="headerlink" title="How Big Is an int?"></a>How Big Is an int?</h3><p>In Python2, the size of an int was limited to 32 bits, which is enough to store an integer from -2,147,483,648 to 2,147,483,647. A long can store 64 bits. Integers larger than the range will cause Integer Overflow.</p>
 <p>In case you wonder where does this range come from. Computers store numbers in its binary format, 32 bits means we have 32 binary bits to store a number. That’s why we can only store  232  different integers. Since we want to store both positive numbers and negative numbers at the same time, each side will get  231  numbers, which is 2,147,483,648.</p>
 <p>In Python3, an int can handle any integer no matter how large it is without causing overflow.</p>
-<p>a = 10**100<br>a<br>10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</p>
-<p>a*a<br>100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</p>
-<p>10</p>
-<p>0b10</p>
-<p>0o10</p>
-<p>0x10<br>Float</p>
-<p>a = 98.5<br>type(a)<br>Tip:You may use type(variable) to get the type of an variable. For example, type(1) will return int.</p>
-<p>You an also use scientific notations:</p>
-<p>9.8125e2<br>981.25<br>Math Functions<br>Python also provides a lot of useful math functions, included in math package. To use them, you’ll have to import math first.</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="number">10</span>**<span class="number">20</span></span><br><span class="line">a</span><br></pre></td></tr></table></figure>
+<p>100000000000000000000</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a*a</span><br></pre></td></tr></table></figure>
+<p>10000000000000000000000000000000000000000<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">10</span></span><br></pre></td></tr></table></figure></p>
+<p>10<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">0b10</span></span><br></pre></td></tr></table></figure></p>
+<p>2<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">0o10</span></span><br></pre></td></tr></table></figure></p>
+<p>8<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">0x10</span></span><br></pre></td></tr></table></figure></p>
+<p>16</p>
+<h2 id="Float"><a href="#Float" class="headerlink" title="Float"></a>Float</h2><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">  a = <span class="number">98.5</span></span><br><span class="line">type(a)</span><br></pre></td></tr></table></figure>
+<p>float</p>
+<h3 id="Tip-You-may-use-type-variable-to-get-the-type-of-an-variable-For-example-type-1-will-return-int"><a href="#Tip-You-may-use-type-variable-to-get-the-type-of-an-variable-For-example-type-1-will-return-int" class="headerlink" title="Tip:You may use type(variable) to get the type of an variable. For example, type(1) will return int."></a>Tip:You may use <strong>type(variable)</strong> to get the type of an variable. For example, type(1) will return int.</h3><p>You an also use scientific notations:</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">9.8125e2</span></span><br></pre></td></tr></table></figure>
+<p>981.25</p>
+<h3 id="Math-Functions"><a href="#Math-Functions" class="headerlink" title="Math Functions"></a>Math Functions</h3><p>Python also provides a lot of useful math functions, included in math package. To use them, you’ll have to import math first.</p>
+<blockquote>
 <p>It’s ok if you don’t understand what is a package or what does import mean here. We will cover this later when we talk about Modules and Packages.</p>
-<p>import math</p>
-<p>print(math.pi)<br>print(math.e)<br>3.141592653589793<br>2.718281828459045</p>
-<p>print(math.floor(98.6))<br>print(math.ceil(98.6))<br>98<br>99</p>
-<p>print(math.pow(2, 3)) #Tip: math.pow always return a float.<br>print(2**3)<br>8.0<br>8</p>
-<p>math.sqrt(25)<br>5.0<br>Boolean</p>
-<p>type(1 &lt; 2)<br>bool</p>
-<p>(2 &lt; 1) or (1 &lt; 2)</p>
-<p>not (2 &lt; 1)</p>
-<p>a = (2 &lt; 1) and (1 &lt; 2)<br>a</p>
-<p>type(a)</p>
-<p>a = (2 == 1)<br>a</p>
-<p>a = (2 != 1)<br>a<br>Strings<br>Strings are our first example of Python sequence. It is a sequence of characters.</p>
-<p>s = ‘this is a string’<br>type(s)</p>
-<p>“this is also a string”<br>‘this is also a string’</p>
-<p>“I’m a string”<br>“I’m a string”</p>
-<h1 id="He-said-”I’m-a-string”"><a href="#He-said-”I’m-a-string”" class="headerlink" title="He said:”I’m a string”"></a>He said:”I’m a string”</h1><h1 id="escape"><a href="#escape" class="headerlink" title="escape"></a>escape</h1><p>s = “He said: \”I’m a string\””<br>print(s)<br>He said: “I’m a string”</p>
-<p>long_s = “You can put a long string that \ntakes up multiple lines here”<br>print(long_s)<br>You can put a long string that<br>takes up multiple lines here</p>
-<p>s = ‘’’<br>This is the first line<br>    This is the second line<br>‘’’<br>print(s)</p>
+</blockquote>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> math</span><br><span class="line">print(math.pi)</span><br><span class="line">print(math.e)</span><br></pre></td></tr></table></figure>
+<p>3.141592653589793<br>2.718281828459045<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">print(math.floor(<span class="number">98.6</span>))</span><br><span class="line">print(math.ceil(<span class="number">98.6</span>))</span><br><span class="line"><span class="comment">#向下取整，向上取整</span></span><br></pre></td></tr></table></figure></p>
+<p>98<br>99<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">print(math.pow(<span class="number">2</span>, <span class="number">3</span>)) <span class="comment">#Tip: math.pow always return a float.</span></span><br><span class="line">print(<span class="number">2</span>**<span class="number">3</span>)</span><br></pre></td></tr></table></figure></p>
+<p>8.0<br>8<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">math.sqrt(<span class="number">25</span>)</span><br></pre></td></tr></table></figure></p>
+<p>5.0</p>
+<h2 id="Boolean"><a href="#Boolean" class="headerlink" title="Boolean"></a>Boolean</h2><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">type(<span class="number">1</span> &lt; <span class="number">2</span>)</span><br></pre></td></tr></table></figure>
+<p>bool<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(<span class="number">2</span> &lt; <span class="number">1</span>) <span class="keyword">or</span> (<span class="number">1</span> &lt; <span class="number">2</span>)</span><br></pre></td></tr></table></figure></p>
+<p>true<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">not</span> (<span class="number">2</span> &lt; <span class="number">1</span>)</span><br></pre></td></tr></table></figure></p>
+<p>true<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a = (<span class="number">2</span> &lt; <span class="number">1</span>) <span class="keyword">and</span> (<span class="number">1</span> &lt; <span class="number">2</span>)</span><br><span class="line">a</span><br></pre></td></tr></table></figure></p>
+<p>false<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">type(a)</span><br></pre></td></tr></table></figure></p>
+<p>false<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a = (<span class="number">2</span> == <span class="number">1</span>)</span><br><span class="line">a</span><br></pre></td></tr></table></figure></p>
+<p>false<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a = (<span class="number">2</span> != <span class="number">1</span>)</span><br><span class="line">a</span><br></pre></td></tr></table></figure></p>
+<p>true</p>
+<h2 id="Strings"><a href="#Strings" class="headerlink" title="Strings"></a>Strings</h2><p>Strings are our first example of Python sequence. It is a sequence of characters.<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">s = <span class="string">'this is a string'</span></span><br><span class="line">type(s)</span><br></pre></td></tr></table></figure></p>
+<p>str<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"this is also a string"</span></span><br><span class="line"><span class="string">"I'm a string"</span></span><br></pre></td></tr></table></figure></p>
+<p>“this is also a string”<br>“I’m a string”<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># He said:"I'm a string"</span></span><br><span class="line"><span class="comment"># escape</span></span><br><span class="line">s = <span class="string">"He said: \"I'm a string\""</span></span><br><span class="line">print(s)</span><br></pre></td></tr></table></figure></p>
+<p>He said: “I’m a string”<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">long_s = <span class="string">"You can put a long string that \ntakes up multiple lines here"</span></span><br><span class="line">print(long_s)</span><br></pre></td></tr></table></figure></p>
+<p>You can put a long string that<br>takes up multiple lines here<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">s = <span class="string">'''</span></span><br><span class="line"><span class="string">This is the first line</span></span><br><span class="line"><span class="string">    This is the second line</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line">print(s)</span><br></pre></td></tr></table></figure></p>
 <p>This is the first line<br>    This is the second line</p>
-<p>Type Conversions</p>
-<p>a = str(98.6)<br>a<br>type(a)<br>str</p>
-<p>str(True)<br>‘True’</p>
-<p>float(‘98.6’)<br>98.6</p>
-<p>int(‘-123’)<br>-123<br>If you mix different numeric types, Ptyhon will try to do the conversion for you. However, you cannot mix string with numbers, unless the operation make sense (string combination &amp; duplicate).</p>
-<p>1 + 2.0<br>3.0</p>
-<p>True + 3<br>4</p>
-<h2 id="3-88-”28”"><a href="#3-88-”28”" class="headerlink" title="3.88+”28”"></a>3.88+”28”</h2><p>TypeError                                 Traceback (most recent call last)</p>
+<h3 id="Type-Conversions"><a href="#Type-Conversions" class="headerlink" title="Type Conversions"></a>Type Conversions</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a = str(<span class="number">98.6</span>)</span><br><span class="line">a</span><br><span class="line">type(a)</span><br></pre></td></tr></table></figure>
+<p>str<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">str(<span class="keyword">True</span>)</span><br></pre></td></tr></table></figure></p>
+<p>‘True’<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">float(<span class="string">'98.6'</span>)</span><br></pre></td></tr></table></figure></p>
+<p>98.6<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int(<span class="string">'-123'</span>)</span><br></pre></td></tr></table></figure></p>
+<p>-123</p>
+<p>If you mix different numeric types, Ptyhon will try to do the conversion for you. However, you cannot mix string with numbers, unless the operation make sense (string combination &amp; duplicate).</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span> + <span class="number">2.0</span></span><br></pre></td></tr></table></figure>
+<p>3.0</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">True</span> + <span class="number">3</span></span><br></pre></td></tr></table></figure>
+<p>4<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">3.88</span>+<span class="string">"28"</span></span><br></pre></td></tr></table></figure></p>
+<hr>
+<p>TypeError                                 Traceback (most recent call last)</p>
 <p><ipython-input-83-a07d69ac8e55> in <module>()<br>—-&gt; 1 3.88+”28”</module></ipython-input-83-a07d69ac8e55></p>
 <p>TypeError: unsupported operand type(s) for +: ‘float’ and ‘str’</p>
-<p>print(int(3.88) + int(“28”))<br>print(int(-2.95) + int(“28”))<br>print(float(3) + float(“28”))<br>print(str(3.88) + str(28))<br>31<br>26<br>31.0<br>3.8828<br>Combine &amp; Duplicate</p>
-<p>template = “My name is”<br>name = “Joshua”<br>greeting = template + “ “ + name + “.”<br>print(greeting)<br>My name is Joshua.</p>
-<p>laugh = 3 * “Ha “<br>print(laugh)<br>Ha Ha Ha<br>Extract &amp;Slice<br>letters = “abcdefghijklmnopqrstuvwxyz”<br>letters[0 ]</p>
-<p>letters = “我爱北京天安门”</p>
-<p>letters[25]<br>‘z’</p>
-<p>letters[-5]<br>‘北’<br>You can extract a substring from a string by using slice. Format: [start:end:step]</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">print(int(<span class="number">3.88</span>) + int(<span class="string">"28"</span>))  </span><br><span class="line">print(int(<span class="number">-2.95</span>) + int(<span class="string">"28"</span>))</span><br><span class="line">print(float(<span class="number">3</span>) + float(<span class="string">"28"</span>)) </span><br><span class="line">print(str(<span class="number">3.88</span>) + str(<span class="number">28</span>))</span><br></pre></td></tr></table></figure>
+<p>31<br>26<br>31.0<br>3.8828</p>
+<h3 id="Combine-amp-Duplicate"><a href="#Combine-amp-Duplicate" class="headerlink" title="Combine &amp; Duplicate"></a>Combine &amp; Duplicate</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">template = <span class="string">"My name is"</span></span><br><span class="line">name = <span class="string">"Joshua"</span></span><br><span class="line">greeting = template + <span class="string">" "</span> + name + <span class="string">"."</span></span><br><span class="line">print(greeting)</span><br></pre></td></tr></table></figure>
+<p>My name is Joshua.<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">laugh = <span class="number">3</span> * <span class="string">"Ha "</span></span><br><span class="line">print(laugh)</span><br></pre></td></tr></table></figure></p>
+<p>Ha Ha Ha </p>
+<h3 id="Extract-amp-Slice"><a href="#Extract-amp-Slice" class="headerlink" title="Extract &amp;Slice"></a>Extract &amp;Slice</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">letters = <span class="string">"abcdefghijklmnopqrstuvwxyz"</span></span><br><span class="line">letters[<span class="number">0</span> ]</span><br><span class="line"><span class="string">'a'</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">letters = <span class="string">"我爱北京天安门"</span></span><br><span class="line"></span><br><span class="line">letters[<span class="number">25</span>]</span><br><span class="line">---------------------------------------------------------------------------</span><br><span class="line">IndexError                                Traceback (most recent call last)</span><br><span class="line">&lt;ipython-input<span class="number">-199</span><span class="number">-3</span>d4ad1959dec&gt; <span class="keyword">in</span> &lt;module&gt;()</span><br><span class="line">----&gt; 1 letters[25]</span><br><span class="line"></span><br><span class="line">IndexError: string index out of range</span><br></pre></td></tr></table></figure>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">letters[<span class="number">-5</span>]</span><br><span class="line"><span class="string">'北'</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>You can extract a substring from a string by using slice. Format: [start:end:step]</li>
+</ul>
 <p>[:] extracts the all string<br>[start:] from start to the end<br>[:end] from the beginning to the end - 1 offset<br>[start:end] from start to end - 1<br>[start:end:step] from start to end - 1, skipping characters by step<br>[:] extracts the all string</p>
-<p>letters[:]<br>‘我爱北京天安门’<br>[start:] from start to the end</p>
-<p>letters[2:]<br>‘北京天安门’</p>
-<p>letters[-3:]<br>‘天安门’<br>[:end] from the beginning to the end - 1 offset</p>
-<p>letters[:5]<br>‘我爱北京天’</p>
-<p>letters[:100]<br>‘我爱北京天安门’<br>[start:end] from start to end - 1</p>
-<p>letters[2:5]<br>‘北京天’</p>
-<p>letters[-6:-2]<br>‘爱北京天’</p>
-<p>letters[-2:-6]<br>‘’<br>[start:end:step] from start to end - 1, skipping characters by step</p>
-<p>letters[1:5:2]</p>
-<p>letters[::7]</p>
-<p>letters[::-1]<br>Get Length</p>
-<p>len(letters)<br>7<br>Split &amp; Combine</p>
-<p>lan = “python ruby c c++ swift”<br>lan.split()<br>[‘python’, ‘ruby’, ‘c’, ‘c++’, ‘swift’]</p>
-<p>todos = “download python, install, download ide, learn”<br>todos.split(‘, ‘)<br>[‘download python’, ‘install’, ‘download ide’, ‘learn’]</p>
-<p>‘,’.join([‘download python’, ‘install’, ‘download ide’, ‘learn’])<br>‘download python,install,download ide,learn’<br>Substitue</p>
-<p>s = ‘I like C. I like C++. I like Python’<br>s.replace(‘like’, ‘hate’)<br>‘I hate C. I hate C++. I hate Python’</p>
-<p>s.replace(‘like’, ‘hate’, 1)<br>‘I hate C. I like C++. I like Python’<br>Layout</p>
-<p>align = ‘Learn how to align’<br>align.center(30)<br>‘      Learn how to align      ‘</p>
-<p>align.ljust(30)<br>‘Learn how to align            ‘</p>
-<p>align.rjust(30)<br>‘            Learn how to align’</p>
-<p>ralign = align.rjust(30)<br>ralign.strip()<br>‘Learn how to align’<br>Other useful tools</p>
-<p>py_desc = “Python description: Python is a programming language that lets you work quickly and integrate systems more effectively.”<br>py_desc.startswith(‘Python’)<br>True</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">letters[:]</span><br></pre></td></tr></table></figure>
+<p>‘我爱北京天安门’<br>[start:] from start to the end<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">letters[<span class="number">2</span>:]</span><br></pre></td></tr></table></figure></p>
+<p>‘北京天安门’<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">letters[<span class="number">-3</span>:]</span><br></pre></td></tr></table></figure></p>
+<p>‘天安门’<br>[:end] from the beginning to the end - 1 offset<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">letters[:<span class="number">5</span>]</span><br></pre></td></tr></table></figure></p>
+<p>‘我爱北京天’<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">letters[:<span class="number">100</span>]</span><br></pre></td></tr></table></figure></p>
+<p>‘我爱北京天安门’<br>[start:end] from start to end - 1<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">letters[<span class="number">2</span>:<span class="number">5</span>]</span><br></pre></td></tr></table></figure></p>
+<p>‘北京天’<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">letters[<span class="number">-6</span>:<span class="number">-2</span>]</span><br></pre></td></tr></table></figure></p>
+<p>‘爱北京天’<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">letters[<span class="number">-2</span>:<span class="number">-6</span>]</span><br></pre></td></tr></table></figure></p>
+<p>‘’<br>[start:end:step] from start to end - 1, skipping characters by step<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#步长（间隔）</span></span><br><span class="line">letters[<span class="number">1</span>:<span class="number">5</span>:<span class="number">2</span>]</span><br></pre></td></tr></table></figure></p>
+<p>‘爱京’<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">letters[::<span class="number">7</span>]</span><br></pre></td></tr></table></figure></p>
+<p>‘我’<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">letters[::<span class="number">-1</span>]</span><br></pre></td></tr></table></figure></p>
+<p>‘门安天京北爱我’</p>
+<p>###　Get Length<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">len(letters)</span><br></pre></td></tr></table></figure></p>
+<p>7</p>
+<h3 id="Split-amp-Join"><a href="#Split-amp-Join" class="headerlink" title="Split &amp; Join"></a>Split &amp; Join</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#以逗号切分</span></span><br><span class="line">lan = <span class="string">"python ruby c c++ swift"</span></span><br><span class="line">lan.split()</span><br></pre></td></tr></table></figure>
+<p>[‘python’, ‘ruby’, ‘c’, ‘c++’, ‘swift’]<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">todos = <span class="string">"download python, install, download ide, learn"</span></span><br><span class="line">todos.split(<span class="string">', '</span>)</span><br></pre></td></tr></table></figure></p>
+<p>[‘download python’, ‘install’, ‘download ide’, ‘learn’]<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'###'</span>.join([<span class="string">'download python'</span>, <span class="string">'install'</span>, <span class="string">'download ide'</span>, <span class="string">'learn'</span>])</span><br></pre></td></tr></table></figure></p>
+<p>‘download python###install###download ide###learn’</p>
+<h3 id="Substitue-居中居左排版"><a href="#Substitue-居中居左排版" class="headerlink" title="Substitue ** 居中居左排版"></a>Substitue ** 居中居左排版</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">s = <span class="string">'I like C. I like C++. I like Python'</span></span><br><span class="line">s.replace(<span class="string">'like'</span>, <span class="string">'hate'</span>)</span><br></pre></td></tr></table></figure>
+<p>‘I hate C. I hate C++. I hate Python’<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">s.replace(<span class="string">'like'</span>, <span class="string">'hate'</span>, <span class="number">1</span>)</span><br></pre></td></tr></table></figure></p>
+<p>‘I hate C. I like C++. I like Python’</p>
+<h3 id="Layout"><a href="#Layout" class="headerlink" title="Layout"></a>Layout</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">align = <span class="string">'Learn how to align'</span></span><br><span class="line">align.center(<span class="number">30</span>)</span><br></pre></td></tr></table></figure>
+<p>‘      Learn how to align      ‘<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">align.ljust(<span class="number">30</span>)</span><br></pre></td></tr></table></figure></p>
+<p>‘Learn how to align            ‘<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">align.rjust(<span class="number">30</span>)</span><br></pre></td></tr></table></figure></p>
+<p>‘            Learn how to align’<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#chars -- 移除字符串头尾指定的字符序列。</span></span><br><span class="line"><span class="comment">#str.strip([chars]);</span></span><br><span class="line">ralign = align.rjust(<span class="number">30</span>)</span><br><span class="line">ralign.strip()</span><br></pre></td></tr></table></figure></p>
+<p>‘Learn how to align’</p>
+<h3 id="Other-useful-tools"><a href="#Other-useful-tools" class="headerlink" title="Other useful tools"></a>Other useful tools</h3><p>py_desc = “Python description: Python is a programming language that lets you work quickly and integrate systems more effectively.”<br>py_desc.startswith(‘Python’)<br>True</p>
 <p>py_desc.endswith(‘effectively.’)<br>True</p>
 <p>py_desc.find(‘language’) #找到language的起始位置<br>​<br>44</p>
 <p>py_desc.isalnum()<br>False</p>
@@ -633,8 +665,11 @@
 <p>print(‘{1} {0}’.format(‘one’, ‘two’))</p>
 <p>a = 5<br>b = 10<br>print(f’Five plus ten is {a + b} and not {2 * (a + b)}.’)<br>Five plus ten is 15 and not 30.</p>
 <p>name = “Joshua”<br>question = “hello”<br>print(f”Hello, {name}! How’s it {question}?”)<br>Hello, Joshua! How’s it hello?</p>
-<p>from wanmen</p>
-<p>​</p>
+<h2 id="小白容易踩的坑！！！"><a href="#小白容易踩的坑！！！" class="headerlink" title="小白容易踩的坑！！！"></a>小白容易踩的坑！！！</h2><blockquote>
+<p>excepted an indented block</p>
+</blockquote>
+<p>1.使用IF条件时需要注意缩进，Python中没有分号，通过缩进来表示上下级从属关系。<br>2.冒号后面需要写上一定内容</p>
+<h3 id="笔记来源：-wanmen"><a href="#笔记来源：-wanmen" class="headerlink" title="笔记来源： wanmen"></a>笔记来源： wanmen</h3><h3 id="排版及修改：-Bbxren"><a href="#排版及修改：-Bbxren" class="headerlink" title="排版及修改： Bbxren"></a>排版及修改： Bbxren</h3><p>​</p>
 
       
     </div>
@@ -653,7 +688,7 @@
   <p><span>本文标题:</span><a href="/2018/11/02/pyDay1/">Python First Day</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Bbxren 的个人博客">Bbxren</a></p>
   <p><span>发布时间:</span>2018年11月02日 - 10:11</p>
-  <p><span>最后更新:</span>2018年11月02日 - 11:11</p>
+  <p><span>最后更新:</span>2018年11月05日 - 17:11</p>
   <p><span>原始链接:</span><a href="/2018/11/02/pyDay1/" title="Python First Day">http://bbxren.top/2018/11/02/pyDay1/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://bbxren.top/2018/11/02/pyDay1/" aria-label="复制成功！"></i></span>
   </p>
@@ -974,7 +1009,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Print-“hello-world”"><span class="nav-number">1.</span> <span class="nav-text">Print(“hello world”)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#there-is-no-and-there-is-no"><span class="nav-number">2.</span> <span class="nav-text">there is no { } and there is no ;</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#He-said-”I’m-a-string”"><span class="nav-number">3.</span> <span class="nav-text">He said:”I’m a string”</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#escape"><span class="nav-number">4.</span> <span class="nav-text">escape</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-88-”28”"><span class="nav-number">4.1.</span> <span class="nav-text">3.88+”28”</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Read-user-input"><span class="nav-number">4.1.1.</span> <span class="nav-text">Read user input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Read-user-input-1"><span class="nav-number">4.1.2.</span> <span class="nav-text">Read user input</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Print-“hello-world”"><span class="nav-number">1.</span> <span class="nav-text">Print(“hello world”)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Grammer"><span class="nav-number">2.</span> <span class="nav-text">Grammer</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Syntax"><span class="nav-number">3.</span> <span class="nav-text">Syntax</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Semantics"><span class="nav-number">4.</span> <span class="nav-text">Semantics</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Variable-Names-and-Objects"><span class="nav-number">4.1.</span> <span class="nav-text">Variable, Names, and Objects</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Object"><span class="nav-number">4.1.1.</span> <span class="nav-text">Object</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Type"><span class="nav-number">4.1.2.</span> <span class="nav-text">Type</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Variable"><span class="nav-number">4.1.3.</span> <span class="nav-text">Variable</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Variable-and-Value"><span class="nav-number">5.</span> <span class="nav-text">Variable and Value</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Assign-New-Value-Mutable"><span class="nav-number">6.</span> <span class="nav-text">Assign New Value, Mutable</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Data-Type"><span class="nav-number">7.</span> <span class="nav-text">Data Type</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Integers"><span class="nav-number">7.1.</span> <span class="nav-text">Integers</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#How-Big-Is-an-int"><span class="nav-number">7.1.1.</span> <span class="nav-text">How Big Is an int?</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Float"><span class="nav-number">7.2.</span> <span class="nav-text">Float</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Tip-You-may-use-type-variable-to-get-the-type-of-an-variable-For-example-type-1-will-return-int"><span class="nav-number">7.2.1.</span> <span class="nav-text">Tip:You may use type(variable) to get the type of an variable. For example, type(1) will return int.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Math-Functions"><span class="nav-number">7.2.2.</span> <span class="nav-text">Math Functions</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Boolean"><span class="nav-number">7.3.</span> <span class="nav-text">Boolean</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Strings"><span class="nav-number">7.4.</span> <span class="nav-text">Strings</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Type-Conversions"><span class="nav-number">7.4.1.</span> <span class="nav-text">Type Conversions</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Combine-amp-Duplicate"><span class="nav-number">7.4.2.</span> <span class="nav-text">Combine &amp; Duplicate</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Extract-amp-Slice"><span class="nav-number">7.4.3.</span> <span class="nav-text">Extract &amp;Slice</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Split-amp-Join"><span class="nav-number">7.4.4.</span> <span class="nav-text">Split &amp; Join</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Substitue-居中居左排版"><span class="nav-number">7.4.5.</span> <span class="nav-text">Substitue ** 居中居左排版</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Layout"><span class="nav-number">7.4.6.</span> <span class="nav-text">Layout</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Other-useful-tools"><span class="nav-number">7.4.7.</span> <span class="nav-text">Other useful tools</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Read-user-input"><span class="nav-number">7.4.8.</span> <span class="nav-text">Read user input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Read-user-input-1"><span class="nav-number">7.4.9.</span> <span class="nav-text">Read user input</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小白容易踩的坑！！！"><span class="nav-number">7.5.</span> <span class="nav-text">小白容易踩的坑！！！</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#笔记来源：-wanmen"><span class="nav-number">7.5.1.</span> <span class="nav-text">笔记来源： wanmen</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#排版及修改：-Bbxren"><span class="nav-number">7.5.2.</span> <span class="nav-text">排版及修改： Bbxren</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -1008,7 +1043,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">1.9k</span>
+    <span title="Site words total count">2.1k</span>
   
 </div>
  <!--统计start-->
