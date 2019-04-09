@@ -19,7 +19,7 @@ HEXO + github 搭建博客
   [HEXO官方文档](https://hexo.io/zh-cn/)
  
 如图：
-![my-blog](https://neveryu.github.io/images/view-my-blog.png)
-![my-blog](https://bbxren.github.io/images/author.png)
+![my-blog](https://github.com/bbxren/bbxren.github.io/blob/hexo/images/www.bbxren.xyz.png?raw=true)
+
 
 
