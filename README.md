@@ -17,6 +17,7 @@ HEXO + github 搭建博客
  
   ```
   [HEXO官方文档](https://hexo.io/zh-cn/)
+  <hr />
 如图：
 
 ![my-blog](https://bbxren.github.io/images/www.bbxren.xyz.png)
