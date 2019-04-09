@@ -14,10 +14,11 @@ HEXO + github 搭建博客
  $ hexo server -s   #静态模式
  $ hexo server -p 5000   #更改端口
  $ hexo server -i 192.168.1.1   #自定义IP
- [HEXO官方文档](https://hexo.io/zh-cn/)
+ 
   ```
+  [HEXO官方文档](https://hexo.io/zh-cn/)
 如图：
 
-![my-blog](https://bbxren.github.io/images/bbxren.png)
+![my-blog](https://bbxren.github.io/images/www.bbxren.xyz.png)
 
 ---
