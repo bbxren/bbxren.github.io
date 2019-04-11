@@ -1,7 +1,7 @@
 # bbxren.github.io
 Build a blog with HEXO + github 
-这是我的个人博客，博客地址： [https://www.bbxren.xyz/](https://bbxren.github.io/)
-This is my personal blog, blog address:  [https://www.bbxren.xyz/](https://bbxren.github.io/)
+## 这是我的个人博客，博客地址： [https://www.bbxren.xyz/](https://bbxren.github.io/)
+## This is my personal blog, blog address:  [https://www.bbxren.xyz/](https://bbxren.github.io/)
 ## hexo 命令
 ## hexo command
   ```
@@ -20,8 +20,8 @@ This is my personal blog, blog address:  [https://www.bbxren.xyz/](https://bbxre
  $ hexo server -i 192.168.1.1   #自定义IP/Custom IP
  
   ```
-  [HEXO官方文档](https://hexo.io/zh-cn/)
-  [HEXO official document](https://hexo.io/)
+   ## [HEXO官方文档](https://hexo.io/zh-cn/)
+  ## [HEXO official document](https://hexo.io/)
  
 ## 博客界面如图：
 ## Blog interface as shown：
