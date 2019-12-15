@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://bbxren.site/"/>
-  <updated>2019-01-01T13:14:06.498Z</updated>
+  <updated>2018-11-12T16:20:01.260Z</updated>
   <id>http://bbxren.site/</id>
   
   <author>
@@ -17,31 +17,9 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>NEW YEAR</title>
-    <link href="http://bbxren.site/2019/01/01/new%20year/"/>
-    <id>http://bbxren.site/2019/01/01/new year/</id>
-    <published>2019-01-01T13:03:43.420Z</published>
-    <updated>2019-01-01T13:14:06.498Z</updated>
-    
-    <content type="html"><![CDATA[<hr><h3 id="happy-new-year"><a href="#happy-new-year" class="headerlink" title="happy new year"></a>happy new year</h3><a id="more"></a><p>新的一年又来了。该走的路，还没有走完；该打的仗，也没有打完；该守的道，也没有能力去守。世界那么大，渺小的我们，还要在路上…</p>]]></content>
-    
-    <summary type="html">
-    
-      happy new year
-    
-    </summary>
-    
-      <category term="Essay" scheme="http://bbxren.site/categories/Essay/"/>
-    
-    
-      <category term="Essay" scheme="http://bbxren.site/tags/Essay/"/>
-    
-  </entry>
-  
-  <entry>
     <title>蓝桥杯习题练习入门训练 C语言版</title>
-    <link href="http://bbxren.site/2018/11/12/bluebr1/"/>
-    <id>http://bbxren.site/2018/11/12/bluebr1/</id>
+    <link href="http://bbxren.site/2018/11/12/null/bluebr1/"/>
+    <id>http://bbxren.site/2018/11/12/null/bluebr1/</id>
     <published>2018-11-12T15:01:24.920Z</published>
     <updated>2018-11-12T16:20:01.260Z</updated>
     
@@ -64,8 +42,8 @@
   
   <entry>
     <title>Quiz 基本语法 及 变量</title>
-    <link href="http://bbxren.site/2018/11/06/pyDay2/"/>
-    <id>http://bbxren.site/2018/11/06/pyDay2/</id>
+    <link href="http://bbxren.site/2018/11/06/Python/pyDay2/"/>
+    <id>http://bbxren.site/2018/11/06/Python/pyDay2/</id>
     <published>2018-11-06T06:52:52.846Z</published>
     <updated>2018-11-06T07:19:03.052Z</updated>
     
@@ -90,8 +68,8 @@
   
   <entry>
     <title>Python First Day</title>
-    <link href="http://bbxren.site/2018/11/02/pyDay1/"/>
-    <id>http://bbxren.site/2018/11/02/pyDay1/</id>
+    <link href="http://bbxren.site/2018/11/02/Python/pyDay1/"/>
+    <id>http://bbxren.site/2018/11/02/Python/pyDay1/</id>
     <published>2018-11-02T02:56:27.000Z</published>
     <updated>2019-10-02T08:11:44.626Z</updated>
     
@@ -112,8 +90,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://bbxren.site/2018/10/25/hello%20world/"/>
-    <id>http://bbxren.site/2018/10/25/hello world/</id>
+    <link href="http://bbxren.site/2018/10/25/null/hello%20world/"/>
+    <id>http://bbxren.site/2018/10/25/null/hello world/</id>
     <published>2018-10-24T19:44:44.289Z</published>
     <updated>2018-10-31T02:44:20.747Z</updated>
     

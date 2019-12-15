@@ -1,0 +1,1335 @@
+
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-big-counter.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="https://fonts.cat.net/css?family=Lato:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|Roboto Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.ico?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.ico?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.ico?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Python,">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="我是王文徽徽徽呀！" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="python for basic data type">
+<meta name="keywords" content="Python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python First Day">
+<meta property="og:url" content="http://bbxren.site/2018/11/02/Python/pyDay1/index.html">
+<meta property="og:site_name" content="我是王文徽徽徽呀！">
+<meta property="og:description" content="python for basic data type">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://bbxren.site/2018/11/02/Python/pyDay1/conda_create.JPG">
+<meta property="og:updated_time" content="2019-10-02T08:11:44.626Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Python First Day">
+<meta name="twitter:description" content="python for basic data type">
+<meta name="twitter:image" content="http://bbxren.site/2018/11/02/Python/pyDay1/conda_create.JPG">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: 'G8FRIXH8GW',
+      apiKey: '2d986a26c763c827965a6845d558b7ce',
+      indexName: 'bbxren',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+  <script>
+  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice")
+  daovoice('init', {
+      app_id: "1f3f1038"
+    });
+  daovoice('update');
+  </script>
+
+
+
+
+  <link rel="canonical" href="http://bbxren.site/2018/11/02/Python/pyDay1/">
+
+
+
+
+
+  <title>Python First Day | 我是王文徽徽徽呀！</title>
+  
+
+
+
+
+
+
+
+
+</head>
+ <!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/love.js"></script>
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+   
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">我是王文徽徽徽呀！</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">(●'◡'●)ﾉ♥不想做设计的作家不是好程序员</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-android"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-star"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-设计">
+          <a href="/design/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-apple"></i> <br>
+            
+            设计
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://bbxren.site/2018/11/02/Python/pyDay1/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Bbxren">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="我是王文徽徽徽呀！">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Python First Day</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-02T10:56:27+08:00">
+                2018-11-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python/" itemprop="url" rel="index">
+                    <span itemprop="name">Python</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/11/02/Python/pyDay1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/11/02/Python/pyDay1/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1.9k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  11
+                </span>
+              
+            </div>
+          
+
+          
+              <div class="post-description">
+                  python for basic data type
+              </div>
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>anaconda中python版本的切换，我这里因为要用到3.6版本，当前版本为3.7<br><img src="conda_create.JPG" alt="avator"></p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>conda creativate –name newpy36 python=3.6   # 安装python3.6<br>安装对应python的虚拟环境的时候会自动安装一些依赖库，输入y<br>安装完成后通过activate 进行激活<br>activate newpy36<br>通过deactivate 进行脱出<br>deactivate</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h1 id="Print-“hello-world”"><a href="#Print-“hello-world”" class="headerlink" title="Print(“hello world”)"></a>Print(“hello world”)</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">"Hello World! 你好,世界! Hola mundo!"</span>);</span><br></pre></td></tr></table></figure>
+<p>Hello World! 你好,世界! Hola mundo!<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">"Hello World!"</span>)</span><br><span class="line">print(<span class="string">"Hello Again"</span>)</span><br></pre></td></tr></table></figure></p>
+<p>Hello World!<br>Hello Again<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">"This is the 3rd line, \n"</span>,</span><br><span class="line">      <span class="string">"and this is also the 3rd line."</span>)</span><br><span class="line">This <span class="keyword">is</span> the <span class="number">3</span>rd line, </span><br><span class="line"> <span class="keyword">and</span> this <span class="keyword">is</span> also the <span class="number">3</span>rd line.</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">"This is the 3rd line, \</span></span><br><span class="line"><span class="string">and this is also the 3rd line."</span>)</span><br></pre></td></tr></table></figure>
+<p>This is the 3rd line, and this is also the 3rd line.</p>
+<h1 id="Grammer"><a href="#Grammer" class="headerlink" title="Grammer"></a>Grammer</h1><p>Expression -&gt; Expression Operator Expression</p>
+<p>Expression -&gt; Number</p>
+<p>Operator -&gt; +, - , * , /</p>
+<p>Number -&gt; 0,1,2,3,4</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="number">4</span><span class="number">-5</span>)</span><br><span class="line"><span class="number">-1</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="number">8</span> + )</span><br></pre></td></tr></table></figure>
+<p>  File “<ipython-input-10-431bcf9f6328>“, line 1<br>    print(8 + )<br>              ^<br>SyntaxError: invalid syntax</ipython-input-10-431bcf9f6328></p>
+<p>刘翔能跑多快？110米跨栏，13秒， 速度= 100米/13秒</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">110</span>/<span class="number">12.97</span></span><br></pre></td></tr></table></figure>
+<p>8.481110254433307</p>
+<blockquote>
+<h1 id="Syntax"><a href="#Syntax" class="headerlink" title="Syntax"></a>Syntax</h1><p><a href="https://www.python.org/dev/peps/pep-0008/" target="_blank" rel="noopener">PEP8</a><br>naming<br> public int numberOfCars = 34;         # Java<br> const numberOfCars = 34;          # JavaScript</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">number_of_cars = <span class="number">34</span> <span class="comment"># Python</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># there is no &#123; &#125; and there is no ;</span></span><br><span class="line">x = <span class="number">6</span></span><br><span class="line"><span class="keyword">if</span> x &lt; <span class="number">7</span>:</span><br><span class="line">   print(x)</span><br><span class="line">​</span><br><span class="line">``` </span><br><span class="line"><span class="number">6</span></span><br><span class="line">```python</span><br><span class="line"><span class="keyword">if</span> x &lt; <span class="number">7</span>:</span><br><span class="line">   print(<span class="string">"x is smaller than 7"</span>)</span><br></pre></td></tr></table></figure>
+<p>x is smaller than 7</p>
+<h1 id="Semantics"><a href="#Semantics" class="headerlink" title="Semantics"></a>Semantics</h1><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="number">8</span></span><br><span class="line"><span class="keyword">if</span> x &lt; <span class="number">7</span>:</span><br><span class="line">    print(<span class="string">"x is smaller than 7"</span>)   </span><br><span class="line">​    print(<span class="string">"x is bigger than 7"</span>)</span><br><span class="line">​</span><br></pre></td></tr></table></figure>
+<h2 id="Variable-Names-and-Objects"><a href="#Variable-Names-and-Objects" class="headerlink" title="Variable, Names, and Objects"></a>Variable, Names, and Objects</h2><p>In Python, everything is implemented as an <strong>object</strong>.</p>
+<h3 id="Object"><a href="#Object" class="headerlink" title="Object"></a>Object</h3><p>We will come back to what an object is later when we talk about Object Oriented Programming. For now, you may just think an object as a box that contains a piece of data.</p>
+<h3 id="Type"><a href="#Type" class="headerlink" title="Type"></a>Type</h3><p>Type defines what operations can be done on an object (data). For example, we know that numbers can be added together.</p>
+<h3 id="Variable"><a href="#Variable" class="headerlink" title="Variable"></a>Variable</h3><h1 id="Variable-and-Value"><a href="#Variable-and-Value" class="headerlink" title="Variable and Value"></a>Variable and Value</h1><p>变量 和 值</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">speed_of_liuxiang=<span class="number">110</span>/<span class="number">12.97</span></span><br><span class="line">distance= <span class="number">1000</span></span><br><span class="line">time = distance/speed_of_liuxiang</span><br><span class="line">print(time)</span><br><span class="line">print(time/<span class="number">60</span>)</span><br></pre></td></tr></table></figure>
+<p>117.9090909090909<br>1.965151515151515</p>
+<h1 id="Assign-New-Value-Mutable"><a href="#Assign-New-Value-Mutable" class="headerlink" title="Assign New Value, Mutable"></a>Assign New Value, Mutable</h1><p>This is how we define variables in Python.<br>In Python, variables are just names. Assignment does not copy a value; it just attaches a name to the object that contains the data. The name is a reference to a thing rather than the thing itself. Think of a name as a sticky note.</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">speed_of_joshua=<span class="number">110</span>/<span class="number">10</span></span><br><span class="line">time = distance/speed_of_joshua</span><br><span class="line">print(time)</span><br><span class="line">​</span><br></pre></td></tr></table></figure>
+<p>90.9090909090909<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">time = time<span class="number">-10</span></span><br><span class="line">print(time)</span><br><span class="line"><span class="number">80.9090909090909</span></span><br></pre></td></tr></table></figure></p>
+<h1 id="Data-Type"><a href="#Data-Type" class="headerlink" title="Data Type"></a>Data Type</h1><p>In this notebook, you will learn the concept of <strong>Variabels</strong>, <strong>Names</strong> and <strong>Object</strong>. And also 4 built-in data types in Python: </p>
+<ul>
+<li>Integer (int)</li>
+<li>Float (float)</li>
+<li>Boolean (bool)</li>
+<li>String (str)</li>
+</ul>
+<h2 id="Integers"><a href="#Integers" class="headerlink" title="Integers"></a>Integers</h2><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">123</span></span><br></pre></td></tr></table></figure>
+<p>123<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">05</span></span><br></pre></td></tr></table></figure></p>
+<p>  File “<ipython-input-30-b139c77ba8b1>“, line 1<br>    05<br>     ^<br>SyntaxError: invalid token</ipython-input-30-b139c77ba8b1></p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">123</span>,<span class="number">456</span>,<span class="number">789</span></span><br></pre></td></tr></table></figure>
+<p>(123, 456, 789)</p>
+<p>###Integer Operations<br><em>Tips: </em><br>You may use print(variable) to print the value of variables in Python3, no matter what type of vairbale it is. Also, print(var1, var2) will print out the value of var1 and var2, separated by a white space.<br>In REPL, the result of the last operations will be printed out automatically<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span> + <span class="number">2</span></span><br></pre></td></tr></table></figure></p>
+<p>3<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="number">5</span></span><br><span class="line">a += <span class="number">2</span></span><br><span class="line">a</span><br></pre></td></tr></table></figure></p>
+<p>7<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="number">5</span></span><br><span class="line">a = a - <span class="number">3</span></span><br><span class="line">a</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">9</span> // <span class="number">5</span></span><br></pre></td></tr></table></figure>
+<p>1<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">9</span> % <span class="number">5</span></span><br></pre></td></tr></table></figure></p>
+<p>4<br>优先权</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">2</span> + <span class="number">3</span> * <span class="number">4</span></span><br></pre></td></tr></table></figure>
+<p>14</p>
+<h3 id="How-Big-Is-an-int"><a href="#How-Big-Is-an-int" class="headerlink" title="How Big Is an int?"></a>How Big Is an int?</h3><p>In Python2, the size of an int was limited to 32 bits, which is enough to store an integer from -2,147,483,648 to 2,147,483,647. A long can store 64 bits. Integers larger than the range will cause Integer Overflow.</p>
+<p>In case you wonder where does this range come from. Computers store numbers in its binary format, 32 bits means we have 32 binary bits to store a number. That’s why we can only store  232  different integers. Since we want to store both positive numbers and negative numbers at the same time, each side will get  231  numbers, which is 2,147,483,648.</p>
+<p>In Python3, an int can handle any integer no matter how large it is without causing overflow.</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="number">10</span>**<span class="number">20</span></span><br><span class="line">a</span><br></pre></td></tr></table></figure>
+<p>100000000000000000000</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a*a</span><br></pre></td></tr></table></figure>
+<p>10000000000000000000000000000000000000000<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">10</span></span><br></pre></td></tr></table></figure></p>
+<p>10<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">0b10</span></span><br></pre></td></tr></table></figure></p>
+<p>2<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">0o10</span></span><br></pre></td></tr></table></figure></p>
+<p>8<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">0x10</span></span><br></pre></td></tr></table></figure></p>
+<p>16</p>
+<h2 id="Float"><a href="#Float" class="headerlink" title="Float"></a>Float</h2><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">  a = <span class="number">98.5</span></span><br><span class="line">type(a)</span><br></pre></td></tr></table></figure>
+<p>float</p>
+<h3 id="Tip-You-may-use-type-variable-to-get-the-type-of-an-variable-For-example-type-1-will-return-int"><a href="#Tip-You-may-use-type-variable-to-get-the-type-of-an-variable-For-example-type-1-will-return-int" class="headerlink" title="Tip:You may use type(variable) to get the type of an variable. For example, type(1) will return int."></a>Tip:You may use <strong>type(variable)</strong> to get the type of an variable. For example, type(1) will return int.</h3><p>You an also use scientific notations:</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">9.8125e2</span></span><br></pre></td></tr></table></figure>
+<p>981.25</p>
+<h3 id="Math-Functions"><a href="#Math-Functions" class="headerlink" title="Math Functions"></a>Math Functions</h3><p>Python also provides a lot of useful math functions, included in math package. To use them, you’ll have to import math first.</p>
+<blockquote>
+<p>It’s ok if you don’t understand what is a package or what does import mean here. We will cover this later when we talk about Modules and Packages.</p>
+</blockquote>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> math</span><br><span class="line">print(math.pi)</span><br><span class="line">print(math.e)</span><br></pre></td></tr></table></figure>
+<p>3.141592653589793<br>2.718281828459045<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">print(math.floor(<span class="number">98.6</span>))</span><br><span class="line">print(math.ceil(<span class="number">98.6</span>))</span><br><span class="line"><span class="comment">#向下取整，向上取整</span></span><br></pre></td></tr></table></figure></p>
+<p>98<br>99<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">print(math.pow(<span class="number">2</span>, <span class="number">3</span>)) <span class="comment">#Tip: math.pow always return a float.</span></span><br><span class="line">print(<span class="number">2</span>**<span class="number">3</span>)</span><br></pre></td></tr></table></figure></p>
+<p>8.0<br>8<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">math.sqrt(<span class="number">25</span>)</span><br></pre></td></tr></table></figure></p>
+<p>5.0</p>
+<h2 id="Boolean"><a href="#Boolean" class="headerlink" title="Boolean"></a>Boolean</h2><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">type(<span class="number">1</span> &lt; <span class="number">2</span>)</span><br></pre></td></tr></table></figure>
+<p>bool<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(<span class="number">2</span> &lt; <span class="number">1</span>) <span class="keyword">or</span> (<span class="number">1</span> &lt; <span class="number">2</span>)</span><br></pre></td></tr></table></figure></p>
+<p>true<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">not</span> (<span class="number">2</span> &lt; <span class="number">1</span>)</span><br></pre></td></tr></table></figure></p>
+<p>true<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a = (<span class="number">2</span> &lt; <span class="number">1</span>) <span class="keyword">and</span> (<span class="number">1</span> &lt; <span class="number">2</span>)</span><br><span class="line">a</span><br></pre></td></tr></table></figure></p>
+<p>false<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">type(a)</span><br></pre></td></tr></table></figure></p>
+<p>false<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a = (<span class="number">2</span> == <span class="number">1</span>)</span><br><span class="line">a</span><br></pre></td></tr></table></figure></p>
+<p>false<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a = (<span class="number">2</span> != <span class="number">1</span>)</span><br><span class="line">a</span><br></pre></td></tr></table></figure></p>
+<p>true</p>
+<h2 id="Strings"><a href="#Strings" class="headerlink" title="Strings"></a>Strings</h2><p>Strings are our first example of Python sequence. It is a sequence of characters.<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">s = <span class="string">'this is a string'</span></span><br><span class="line">type(s)</span><br></pre></td></tr></table></figure></p>
+<p>str<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"this is also a string"</span></span><br><span class="line"><span class="string">"I'm a string"</span></span><br></pre></td></tr></table></figure></p>
+<p>“this is also a string”<br>“I’m a string”<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># He said:"I'm a string"</span></span><br><span class="line"><span class="comment"># escape</span></span><br><span class="line">s = <span class="string">"He said: \"I'm a string\""</span></span><br><span class="line">print(s)</span><br></pre></td></tr></table></figure></p>
+<p>He said: “I’m a string”<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">long_s = <span class="string">"You can put a long string that \ntakes up multiple lines here"</span></span><br><span class="line">print(long_s)</span><br></pre></td></tr></table></figure></p>
+<p>You can put a long string that<br>takes up multiple lines here<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">s = <span class="string">'''</span></span><br><span class="line"><span class="string">This is the first line</span></span><br><span class="line"><span class="string">    This is the second line</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line">print(s)</span><br></pre></td></tr></table></figure></p>
+<p>This is the first line<br>    This is the second line</p>
+<h3 id="Type-Conversions"><a href="#Type-Conversions" class="headerlink" title="Type Conversions"></a>Type Conversions</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a = str(<span class="number">98.6</span>)</span><br><span class="line">a</span><br><span class="line">type(a)</span><br></pre></td></tr></table></figure>
+<p>str<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">str(<span class="keyword">True</span>)</span><br></pre></td></tr></table></figure></p>
+<p>‘True’<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">float(<span class="string">'98.6'</span>)</span><br></pre></td></tr></table></figure></p>
+<p>98.6<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int(<span class="string">'-123'</span>)</span><br></pre></td></tr></table></figure></p>
+<p>-123</p>
+<p>If you mix different numeric types, Ptyhon will try to do the conversion for you. However, you cannot mix string with numbers, unless the operation make sense (string combination &amp; duplicate).</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span> + <span class="number">2.0</span></span><br></pre></td></tr></table></figure>
+<p>3.0</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">True</span> + <span class="number">3</span></span><br></pre></td></tr></table></figure>
+<p>4<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">3.88</span>+<span class="string">"28"</span></span><br></pre></td></tr></table></figure></p>
+<hr>
+<p>TypeError                                 Traceback (most recent call last)</p>
+<p><ipython-input-83-a07d69ac8e55> in <module>()<br>—-&gt; 1 3.88+”28”</module></ipython-input-83-a07d69ac8e55></p>
+<p>TypeError: unsupported operand type(s) for +: ‘float’ and ‘str’</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">print(int(<span class="number">3.88</span>) + int(<span class="string">"28"</span>))  </span><br><span class="line">print(int(<span class="number">-2.95</span>) + int(<span class="string">"28"</span>))</span><br><span class="line">print(float(<span class="number">3</span>) + float(<span class="string">"28"</span>)) </span><br><span class="line">print(str(<span class="number">3.88</span>) + str(<span class="number">28</span>))</span><br></pre></td></tr></table></figure>
+<p>31<br>26<br>31.0<br>3.8828</p>
+<h3 id="Combine-amp-Duplicate"><a href="#Combine-amp-Duplicate" class="headerlink" title="Combine &amp; Duplicate"></a>Combine &amp; Duplicate</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">template = <span class="string">"My name is"</span></span><br><span class="line">name = <span class="string">"Joshua"</span></span><br><span class="line">greeting = template + <span class="string">" "</span> + name + <span class="string">"."</span></span><br><span class="line">print(greeting)</span><br></pre></td></tr></table></figure>
+<p>My name is Joshua.<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">laugh = <span class="number">3</span> * <span class="string">"Ha "</span></span><br><span class="line">print(laugh)</span><br></pre></td></tr></table></figure></p>
+<p>Ha Ha Ha </p>
+<h3 id="Extract-amp-Slice"><a href="#Extract-amp-Slice" class="headerlink" title="Extract &amp;Slice"></a>Extract &amp;Slice</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">letters = <span class="string">"abcdefghijklmnopqrstuvwxyz"</span></span><br><span class="line">letters[<span class="number">0</span> ]</span><br><span class="line"><span class="string">'a'</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">letters = <span class="string">"我爱北京天安门"</span></span><br><span class="line"></span><br><span class="line">letters[<span class="number">25</span>]</span><br><span class="line">---------------------------------------------------------------------------</span><br><span class="line">IndexError                                Traceback (most recent call last)</span><br><span class="line">&lt;ipython-input<span class="number">-199</span><span class="number">-3</span>d4ad1959dec&gt; <span class="keyword">in</span> &lt;module&gt;()</span><br><span class="line">----&gt; 1 letters[25]</span><br><span class="line"></span><br><span class="line">IndexError: string index out of range</span><br></pre></td></tr></table></figure>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">letters[<span class="number">-5</span>]</span><br><span class="line"><span class="string">'北'</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>You can extract a substring from a string by using slice. Format: [start:end:step]</li>
+</ul>
+<p>[:] extracts the all string<br>[start:] from start to the end<br>[:end] from the beginning to the end - 1 offset<br>[start:end] from start to end - 1<br>[start:end:step] from start to end - 1, skipping characters by step<br>[:] extracts the all string</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">letters[:]</span><br></pre></td></tr></table></figure>
+<p>‘我爱北京天安门’<br>[start:] from start to the end<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">letters[<span class="number">2</span>:]</span><br></pre></td></tr></table></figure></p>
+<p>‘北京天安门’<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">letters[<span class="number">-3</span>:]</span><br></pre></td></tr></table></figure></p>
+<p>‘天安门’<br>[:end] from the beginning to the end - 1 offset<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">letters[:<span class="number">5</span>]</span><br></pre></td></tr></table></figure></p>
+<p>‘我爱北京天’<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">letters[:<span class="number">100</span>]</span><br></pre></td></tr></table></figure></p>
+<p>‘我爱北京天安门’<br>[start:end] from start to end - 1<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">letters[<span class="number">2</span>:<span class="number">5</span>]</span><br></pre></td></tr></table></figure></p>
+<p>‘北京天’<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">letters[<span class="number">-6</span>:<span class="number">-2</span>]</span><br></pre></td></tr></table></figure></p>
+<p>‘爱北京天’<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">letters[<span class="number">-2</span>:<span class="number">-6</span>]</span><br></pre></td></tr></table></figure></p>
+<p>‘’<br>[start:end:step] from start to end - 1, skipping characters by step<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#步长（间隔）</span></span><br><span class="line">letters[<span class="number">1</span>:<span class="number">5</span>:<span class="number">2</span>]</span><br></pre></td></tr></table></figure></p>
+<p>‘爱京’<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">letters[::<span class="number">7</span>]</span><br></pre></td></tr></table></figure></p>
+<p>‘我’<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">letters[::<span class="number">-1</span>]</span><br></pre></td></tr></table></figure></p>
+<p>‘门安天京北爱我’</p>
+<p>###　Get Length<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">len(letters)</span><br></pre></td></tr></table></figure></p>
+<p>7</p>
+<h3 id="Split-amp-Join"><a href="#Split-amp-Join" class="headerlink" title="Split &amp; Join"></a>Split &amp; Join</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#以逗号切分</span></span><br><span class="line">lan = <span class="string">"python ruby c c++ swift"</span></span><br><span class="line">lan.split()</span><br></pre></td></tr></table></figure>
+<p>[‘python’, ‘ruby’, ‘c’, ‘c++’, ‘swift’]<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">todos = <span class="string">"download python, install, download ide, learn"</span></span><br><span class="line">todos.split(<span class="string">', '</span>)</span><br></pre></td></tr></table></figure></p>
+<p>[‘download python’, ‘install’, ‘download ide’, ‘learn’]<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'###'</span>.join([<span class="string">'download python'</span>, <span class="string">'install'</span>, <span class="string">'download ide'</span>, <span class="string">'learn'</span>])</span><br></pre></td></tr></table></figure></p>
+<p>‘download python###install###download ide###learn’</p>
+<h3 id="Substitue"><a href="#Substitue" class="headerlink" title="Substitue"></a>Substitue</h3><p>  <strong><em>#居中居左排版</em></strong><br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">s = <span class="string">'I like C. I like C++. I like Python'</span></span><br><span class="line">s.replace(<span class="string">'like'</span>, <span class="string">'hate'</span>)</span><br></pre></td></tr></table></figure></p>
+<p>‘I hate C. I hate C++. I hate Python’<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">s.replace(<span class="string">'like'</span>, <span class="string">'hate'</span>, <span class="number">1</span>)</span><br></pre></td></tr></table></figure></p>
+<p>‘I hate C. I like C++. I like Python’</p>
+<h3 id="Layout"><a href="#Layout" class="headerlink" title="Layout"></a>Layout</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">align = <span class="string">'Learn how to align'</span></span><br><span class="line">align.center(<span class="number">30</span>)</span><br></pre></td></tr></table></figure>
+<p>‘      Learn how to align      ‘<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">align.ljust(<span class="number">30</span>)</span><br></pre></td></tr></table></figure></p>
+<p>‘Learn how to align            ‘<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">align.rjust(<span class="number">30</span>)</span><br></pre></td></tr></table></figure></p>
+<p>‘            Learn how to align’<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#chars -- 移除字符串头尾指定的字符序列。</span></span><br><span class="line"><span class="comment">#str.strip([chars]);</span></span><br><span class="line">ralign = align.rjust(<span class="number">30</span>)</span><br><span class="line">ralign.strip()</span><br></pre></td></tr></table></figure></p>
+<p>‘Learn how to align’</p>
+<h3 id="Other-useful-tools"><a href="#Other-useful-tools" class="headerlink" title="Other useful tools"></a>Other useful tools</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">py_desc = <span class="string">"Python description: Python is a programming language that lets you work quickly and integrate systems more effectively."</span></span><br><span class="line">py_desc.startswith(<span class="string">'Python'</span>)</span><br></pre></td></tr></table></figure>
+<p>True<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">py_desc.endswith(<span class="string">'effectively.'</span>)</span><br></pre></td></tr></table></figure></p>
+<p>True<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">py_desc.find(<span class="string">'language'</span>) <span class="comment">#找到language的起始位置</span></span><br><span class="line">​</span><br></pre></td></tr></table></figure></p>
+<p>44<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">py_desc.isalnum()</span><br></pre></td></tr></table></figure></p>
+<p>False<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">py_desc.count(<span class="string">"Python"</span>) <span class="comment"># 出现次数</span></span><br></pre></td></tr></table></figure></p>
+<p>2<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">py_desc.strip(<span class="string">'.'</span>)</span><br></pre></td></tr></table></figure></p>
+<p>‘Python description: Python is a programming language that lets you work quickly and integrate systems more effectively’<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">py_desc.upper()</span><br></pre></td></tr></table></figure></p>
+<p>‘PYTHON DESCRIPTION: PYTHON IS A PROGRAMMING LANGUAGE THAT LETS YOU WORK QUICKLY AND INTEGRATE SYSTEMS MORE EFFECTIVELY.’<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">py_desc.title()</span><br></pre></td></tr></table></figure></p>
+<p>‘Python Description: Python Is A Programming Language That Lets You Work Quickly And Integrate Systems More Effectively.’</p>
+<h3 id="in-and-out"><a href="#in-and-out" class="headerlink" title="in and out~~"></a>in and out~~</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">### Read user input ###</span></span><br><span class="line">age = input(<span class="string">"How old are you?"</span>)</span><br><span class="line">height = input(<span class="string">"How tall are you?"</span>)</span><br><span class="line">weight = input(<span class="string">"How much do you weigh?"</span>)</span><br><span class="line">​print(<span class="string">"So, you're %s old, %s tall and %s heavy."</span> % (age, height, weight))</span><br></pre></td></tr></table></figure>
+<p>How old are you?10<br>How tall are you?20<br>How much do you weigh?30<br>So, you’re 10 old, 20 tall and 30 heavy.<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">### Read user input ###</span></span><br><span class="line">age = input(<span class="string">"How old are you?\n"</span>)</span><br><span class="line">height = input(<span class="string">"How tall are you?\n"</span>)</span><br><span class="line">weight = input(<span class="string">"How much do you weigh?\n"</span>)</span><br><span class="line">​print(<span class="string">"So, you're %s yers old, %s meters tall and %s kg heavy."</span> % (age, height, weight))</span><br></pre></td></tr></table></figure></p>
+<p>How old are you?<br>10<br>How tall are you?<br>20<br>How much do you weigh?<br>30<br>So, you’re 10 yers old, 20 meters tall and 30 kg heavy.<br>字符串格式输出:<br><a href="https://pyformat.info/#string_pad_align" target="_blank" rel="noopener">https://pyformat.info/#string_pad_align</a><br><a href="https://dbader.org/blog/python-string-formatting" target="_blank" rel="noopener">https://dbader.org/blog/python-string-formatting</a><br><a href="https://docs.python.org/3.6/library/string.html" target="_blank" rel="noopener">https://docs.python.org/3.6/library/string.html</a></p>
+<h3 id="New-Style-in-Python-3-6"><a href="#New-Style-in-Python-3-6" class="headerlink" title="New Style in Python 3.6"></a>New Style in Python 3.6</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">'%s %s'</span> % (<span class="string">'one'</span>, <span class="string">'two'</span>))</span><br><span class="line">print(<span class="string">'&#123;&#125; &#123;&#125;'</span>.format(<span class="string">'one'</span>, <span class="string">'two'</span>))</span><br><span class="line">print(<span class="string">'%d %d'</span> % (<span class="number">1</span>, <span class="number">2</span>))</span><br><span class="line">print(<span class="string">'&#123;&#125; &#123;&#125;'</span>.format(<span class="number">1</span>, <span class="number">2</span>))</span><br></pre></td></tr></table></figure>
+<p>one two<br>one two<br>1 2<br>1 2<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">'&#123;1&#125; &#123;0&#125;'</span>.format(<span class="string">'one'</span>, <span class="string">'two'</span>))</span><br></pre></td></tr></table></figure></p>
+<p>two one<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="number">5</span></span><br><span class="line">b = <span class="number">10</span></span><br><span class="line">print(<span class="string">f'Five plus ten is <span class="subst">&#123;a + b&#125;</span> and not <span class="subst">&#123;<span class="number">2</span> * (a + b)&#125;</span>.'</span>)</span><br></pre></td></tr></table></figure></p>
+<p>Five plus ten is 15 and not 30.<br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">name = <span class="string">"Joshua"</span></span><br><span class="line">question = <span class="string">"hello"</span></span><br><span class="line">print(<span class="string">f"Hello, <span class="subst">&#123;name&#125;</span>! How's it <span class="subst">&#123;question&#125;</span>?"</span>)</span><br></pre></td></tr></table></figure></p>
+<p>Hello, Joshua! How’s it hello?</p>
+<h2 id="小白容易踩的坑"><a href="#小白容易踩的坑" class="headerlink" title="小白容易踩的坑"></a>小白容易踩的坑</h2><blockquote>
+<p>excepted an indented block</p>
+</blockquote>
+<p>1.使用IF条件时需要注意缩进，Python中没有分号，通过缩进来表示上下级从属关系。<br>2.冒号后面需要写上一定内容</p>
+<ul>
+<li>笔记来源： wanmen</li>
+<li>排版及修改： Bbxren</li>
+</ul>
+<p>​</p>
+
+      
+    </div>
+    
+    
+    
+<div>
+      
+        
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <p><span>本文标题:</span><a href="/2018/11/02/Python/pyDay1/">Python First Day</a></p>
+  <p><span>文章作者:</span><a href="/" title="访问 Bbxren 的个人博客">Bbxren</a></p>
+  <p><span>发布时间:</span>2018年11月02日 - 10:11</p>
+  <p><span>最后更新:</span>2019年10月02日 - 16:10</p>
+  <p><span>原始链接:</span><a href="/2018/11/02/Python/pyDay1/" title="Python First Day">http://bbxren.site/2018/11/02/Python/pyDay1/</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://bbxren.site/2018/11/02/Python/pyDay1/" aria-label="复制成功！"></i></span>
+  </p>
+ 
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" http:="" www.ccopyright.com.cn="" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">作者：Bbxren 转载请保留原文链接及作者</a></p> 
+
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({   
+          title: "",   
+          text: '复制成功',
+          icon: "success", 
+          showConfirmButton: true
+          });
+    });
+    });  
+</script>
+
+
+      
+</div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>最近又缺钱花了</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="Bbxren 微信扫码">
+        <p>微信扫码</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="Bbxren 支付宝扫码">
+        <p>支付宝扫码</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Python/" rel="tag"><i class="fa fa-tag"></i> Python</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+          <div class="wp_rating">
+            <div id="wpac-rating"></div>
+          </div>
+        
+
+        
+
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/10/25/null/hello world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/11/06/Python/pyDay2/" rel="prev" title="Quiz 基本语法 及 变量">
+                Quiz 基本语法 及 变量 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_inline_share_toolbox">
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5bd25ef8af0ce4e2" async="async"></script>
+</div>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80MDUzNi8xNzA2Mw=="></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="Bbxren">
+            
+              <p class="site-author-name" itemprop="name">Bbxren</p>
+              <p class="site-description motion-element" itemprop="description">王文徽,个人博客,记录</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/bbxren" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.jianshu.com/u/78a591b391b8" target="_blank" title="简书">
+                      
+                        <i class="fa fa-fw fa-book"></i>简书</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.zcool.com.cn/u/17094501" target="_blank" title="站酷">
+                      
+                        <i class="fa fa-fw fa-anchor"></i>站酷</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://me.csdn.net/baidu_41799338" target="_blank" title="CSDN">
+                      
+                        <i class="fa fa-fw fa-rotate-right"></i>CSDN</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://user.qzone.qq.com/1205418487/main" target="_blank" title="QQZone F">
+                      
+                        <i class="fa fa-fw fa-qq"></i>QQZone F</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://user.qzone.qq.com/365905891/main" target="_blank" title="QQZone S">
+                      
+                        <i class="fa fa-fw fa-qq"></i>QQZone S</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-globe"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.alloyteam.com/nav/" title="Web前端导航" target="_blank">Web前端导航</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.chuangzaoshi.com/code" title="创造狮导航" target="_blank">创造狮导航</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://e.xitu.io/" title="掘金酱" target="_blank">掘金酱</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.v2ex.com/" title="V2EX" target="_blank">V2EX</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.v2ex.com/" title="印记中文" target="_blank">印记中文</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+        <br>
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="298" height="52" src="//music.163.com/outchain/player?type=2&id=421885394&auto=1&height=32"></iframe>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Print-“hello-world”"><span class="nav-number">1.</span> <span class="nav-text">Print(“hello world”)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Grammer"><span class="nav-number">2.</span> <span class="nav-text">Grammer</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Syntax"><span class="nav-number">3.</span> <span class="nav-text">Syntax</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Semantics"><span class="nav-number">4.</span> <span class="nav-text">Semantics</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Variable-Names-and-Objects"><span class="nav-number">4.1.</span> <span class="nav-text">Variable, Names, and Objects</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Object"><span class="nav-number">4.1.1.</span> <span class="nav-text">Object</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Type"><span class="nav-number">4.1.2.</span> <span class="nav-text">Type</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Variable"><span class="nav-number">4.1.3.</span> <span class="nav-text">Variable</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Variable-and-Value"><span class="nav-number">5.</span> <span class="nav-text">Variable and Value</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Assign-New-Value-Mutable"><span class="nav-number">6.</span> <span class="nav-text">Assign New Value, Mutable</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Data-Type"><span class="nav-number">7.</span> <span class="nav-text">Data Type</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Integers"><span class="nav-number">7.1.</span> <span class="nav-text">Integers</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#How-Big-Is-an-int"><span class="nav-number">7.1.1.</span> <span class="nav-text">How Big Is an int?</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Float"><span class="nav-number">7.2.</span> <span class="nav-text">Float</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Tip-You-may-use-type-variable-to-get-the-type-of-an-variable-For-example-type-1-will-return-int"><span class="nav-number">7.2.1.</span> <span class="nav-text">Tip:You may use type(variable) to get the type of an variable. For example, type(1) will return int.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Math-Functions"><span class="nav-number">7.2.2.</span> <span class="nav-text">Math Functions</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Boolean"><span class="nav-number">7.3.</span> <span class="nav-text">Boolean</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Strings"><span class="nav-number">7.4.</span> <span class="nav-text">Strings</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Type-Conversions"><span class="nav-number">7.4.1.</span> <span class="nav-text">Type Conversions</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Combine-amp-Duplicate"><span class="nav-number">7.4.2.</span> <span class="nav-text">Combine &amp; Duplicate</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Extract-amp-Slice"><span class="nav-number">7.4.3.</span> <span class="nav-text">Extract &amp;Slice</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Split-amp-Join"><span class="nav-number">7.4.4.</span> <span class="nav-text">Split &amp; Join</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Substitue"><span class="nav-number">7.4.5.</span> <span class="nav-text">Substitue</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Layout"><span class="nav-number">7.4.6.</span> <span class="nav-text">Layout</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Other-useful-tools"><span class="nav-number">7.4.7.</span> <span class="nav-text">Other useful tools</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#in-and-out"><span class="nav-number">7.4.8.</span> <span class="nav-text">in and out~~</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#New-Style-in-Python-3-6"><span class="nav-number">7.4.9.</span> <span class="nav-text">New Style in Python 3.6</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小白容易踩的坑"><span class="nav-number">7.5.</span> <span class="nav-text">小白容易踩的坑</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Bbxren</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">4.8k</span>
+  
+</div>
+ <!--统计start-->
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      <span id="busuanzi_container_site_pv">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+  </span>
+      <span id="busuanzi_container_site_uv">
+  总访客数<span id="busuanzi_value_site_uv"></span>人次
+  </span>
+      <!--统计end-->
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/canvas_lines.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'tHfpa2K19ShXSMwkFTvSuLDB-gzGzoHsz',
+        appKey: 'fPn5WXlp0ym9nDWtpnYnVSty',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+  
+
+  
+  
+  <script type="text/javascript">
+  wpac_init = window.wpac_init || [];
+  wpac_init.push({widget: 'Rating', id: 14622,
+    el: 'wpac-rating',
+    color: 'fc6423'
+  });
+  (function() {
+    if ('WIDGETPACK_LOADED' in window) return;
+    WIDGETPACK_LOADED = true;
+    var mc = document.createElement('script');
+    mc.type = 'text/javascript';
+    mc.async = true;
+    mc.src = '//embed.widgetpack.com/widget.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+  })();
+  </script>
+
+
+  
+
+  
+
+  
+
+  <script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":true,"debug":false,"model":{"jsonPath":"live2d-widget-model-zhiku"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false});</script>
+ 
+</body>
+</html>
