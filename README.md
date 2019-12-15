@@ -1,7 +1,7 @@
 # bbxren.github.io
 Build a blog with HEXO + github 
-## 这是我的个人博客，博客地址： [https://www.bbxren.xyz/](https://bbxren.github.io/)
-## This is my personal blog, blog address:  [https://www.bbxren.xyz/](https://bbxren.github.io/)
+## 这是我的个人博客，博客地址： [https://www.bbxren.site/](https://bbxren.github.io/)
+## This is my personal blog, blog address:  [https://www.bbxren.site/](https://bbxren.github.io/)
 ## hexo 命令
 ## hexo command
   ```
