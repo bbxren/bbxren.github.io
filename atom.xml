@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://bbxren.site/"/>
-  <updated>2019-12-26T14:13:53.377Z</updated>
+  <updated>2019-12-26T23:56:33.337Z</updated>
   <id>http://bbxren.site/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>数据仓库与数据挖掘概述</title>
+    <link href="http://bbxren.site/2019/12/26/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/%E6%95%B0%E6%8D%AE%E4%BB%93%E5%BA%93%E4%B8%8E%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E6%A6%82%E8%BF%B0/"/>
+    <id>http://bbxren.site/2019/12/26/数据挖掘/数据仓库与数据挖掘概述/</id>
+    <published>2019-12-26T14:08:05.000Z</published>
+    <updated>2019-12-26T23:56:33.337Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="数据仓库与数据挖掘概述"><a href="#数据仓库与数据挖掘概述" class="headerlink" title="数据仓库与数据挖掘概述"></a>数据仓库与数据挖掘概述</h3><h4 id="数据挖掘"><a href="#数据挖掘" class="headerlink" title="数据挖掘"></a>数据挖掘</h4><p>这学期选了数据仓库与数据挖掘概论，上课比较混，没怎么学到东西，下面做一个学习总结。</p><p>数据挖掘主要应用于<strong>物联网</strong> <em>The Internet of Things</em>、<strong>云计算</strong> <em>Cloud Computing</em>以及<strong>大数据</strong> <em>Big Data</em></p><p>数据挖掘来源于于机器学习和知识工程，其中涉及到很多专业名词，我并没有相关的实践经验，也了解的不是很清楚，总的来说，数据挖掘就是从大量的、不完全的、有噪声的、模糊的、随机的数据中，提取隐含在其中的、人们事先不知道的、但又是潜在有用的信息和知识的过程，就是从数据中挖掘知识。</p><p>其中数据来源可以是结构化的，比如关系数据库中的数据，也可以是半结构化的文本、图形、图像数据等。</p><h5 id="数据挖掘步骤"><a href="#数据挖掘步骤" class="headerlink" title="数据挖掘步骤"></a>数据挖掘步骤</h5><p><img alt="" data-src="https://ftp.bmp.ovh/imgs/2019/12/d04adc04ef29abd0.png" class="lazyload"></p><p>整个过程还是清晰明了的（JIAWEI HAN）</p><p><img alt="" data-src="https://upload.cc/i1/2019/12/27/rZ9FDf.png" class="lazyload"></p><p>数据清理(Data Cleaning):消除噪声或不一致数据；</p><p>数据集成(Data Integration):多种数据源组合在一起；</p><p>数据选择(Data Selection):从数据库中检索与分析任务相关的数据；</p><p>数据变换(Data Transformation):数据变换或统一成适合挖掘的形式，如通过汇总或聚集操作；</p><p>数据挖掘(Data Mining):使用智能方法提取数据模式；</p><p>模式评估(Data Evaluation):根据某种兴趣度度量，识别表示知识的真正有趣的模式；</p><p>知识表示(Knowledge presentation)：使用可视化和知识表示技术，向用户提供挖掘的知识；</p><h5 id="数据挖掘的功能"><a href="#数据挖掘的功能" class="headerlink" title="数据挖掘的功能"></a>数据挖掘的功能</h5><p><strong>关联分析</strong></p><p>•若两个或多个变量间存在着某种规律性，称为关联</p><p>•分简单关联、时序关联、因果关联</p><p>•从大量的数据中发现项集之间有趣的联系、相关关系或因果结构，以及项集的频繁模式</p><p>比如<em>啤酒与尿布</em></p><p><strong>分类与预测</strong></p><p>•分类：提出一个分类函数或者分类模型，该模型能把数据库中的数据项映射到给定的类别中的一个。</p><p>•需要有一个训练样本数据集作为输入</p><p>•预测：利用历史数据建立模型，再运用最新数据作为输入值，获得未来变化的趋势或者评估给定样本可能具有的属性或值的范围。</p><p>比如<em>决策树、K-最临近分类法</em></p><p><strong>聚类分析</strong></p><p><strong>偏差分析</strong></p><h4 id="数据仓库"><a href="#数据仓库" class="headerlink" title="数据仓库"></a>数据仓库</h4><p>数据仓库是面向主题的、集成的、具有时间特征的、稳定的数据集合，用以支持经营管理中的决策制定过程。</p><p><img alt="" data-src="https://ftp.bmp.ovh/imgs/2019/12/0f680637b5bdeb4c.png" class="lazyload"></p><p>我的理解就是数据仓库为数据挖掘所服务，给数据挖掘提供更好的数据源以及更好的平台和便利性。</p><p>反正看了一大堆应用案例，数据挖掘对用户行为的分析等十分有效，也是让机器更了解人类使用习惯的过程，我觉得这之中良好的数据源和Data Mining的方法至关重要。</p><h5 id="基本特征"><a href="#基本特征" class="headerlink" title="基本特征"></a>基本特征</h5><ol><li><p>数据是面向主题的</p><p>就是说，和面向于应用的传统数据库，数据仓库以主题为核心，你要挖掘要分析，必须有一个对象和主题，并且丢弃了不必要的信息，和数据库来比较，我觉得它太智能了，并且有很高的商业价值，另外，数据仓库仍是采用关系数据库技术来实现，即数据仓库的数据最终也表现为关系。</p></li><li><p>数据是集成的</p><p>统一源数据（命名，编码、单位等）</p><p>综合与计算（年月日时…)</p></li><li><p>数据是不可更新的</p><p>仅提供查询</p></li><li><p>数据是随时间不断变化的</p><p>增加新内容，删除旧内容</p></li></ol><h5 id="体系结构"><a href="#体系结构" class="headerlink" title="体系结构"></a>体系结构</h5><p><img alt="" data-src="https://ftp.bmp.ovh/imgs/2019/12/9a7ef23d04fca99b.png" class="lazyload"></p><ul><li><p>信息获取层</p><p>收集、提取、净化、聚合</p></li><li><p>信息存储层</p><p>保存</p></li><li><p>信息传递层</p><p>报表</p><p>图表</p><p>又称展示层、应用层</p></li></ul><p>数据仓库中的数据分为多个级别</p><p>数据仓库中存在的不同综合级别，称其为<em>粒度</em>（granularity）</p><p><strong>粒度</strong></p><ul><li>指数据仓库的数据单位中保存数据细化或综合程度的级别</li><li><p>粒度影响存放在数据仓库中的数据量的大小，同时影响数据仓库所能回答查询问题的细节程度和响应速度，就是说这个数据有没有细节，够不够<em>细</em></p></li><li><p>冗余</p></li></ul><p><strong>元数据</strong></p><ul><li>关于数据的数据</li><li>如传统数据库中的<em>数据字典</em></li><li>可对数据仓库中的各种数据进行详细的描述与说明，说明每个数据的上下文关系，使每个数据具有符合现实的真实含义，使最终用户了解这些数据之间的关系</li><li>方便数据仓库的组织、检索和加载</li></ul><p><strong>分割问题</strong></p><ul><li><p>将数据分散到各自的物理单元中，以便能独立处理，以提高数据处理效率</p></li><li><p>数据分割后的数据单元称为分片</p></li><li><p>将具有相关性的数据组织在一起，就会提高效率</p></li><li><p>如某一时间，某一时段的数据，某一地区的数据，特定业务领域的数据</p><p><em>分割的标准</em></p><p>•时间</p><p>•商业领域</p><p>•地理位置</p><p>•组织单位</p><p><em>分割的优越性</em></p><p>•容易重构</p><p>•自由索引</p><p>•顺序扫描</p><p>•容易恢复</p><p>•容易监控</p><p><em>分割的层次</em></p><p>•分为系统层和应用层</p><p>•系统层的分割由数据库管理系统和操作系统完成</p><p>•应用层的分割由应用程序完成，在应用层上的分割更有意义——DM</p></li></ul><h5 id="数据组织形式"><a href="#数据组织形式" class="headerlink" title="数据组织形式"></a>数据组织形式</h5><ol><li><p>简单堆积结构</p><p>就是每天往后加数据</p></li><li><p>轮转综合结构</p><p> 就是分年月周日级别，每天加数据，到下一个级别汇总覆盖低级数据</p></li><li><p>简单直接结构</p><p>就是我想什么时候加数据就什么时候加，一周一次，一月一次都行</p></li><li><p>连续结构</p><p>通过两个或更多连续的简单直接结构数据组织形式的文件，可以生成另一种连续结构数据组织形式的文件，就比如一个等差数列和另一个等差数列合成一个等差数列</p></li></ol><h5 id="数据模型"><a href="#数据模型" class="headerlink" title="数据模型"></a>数据模型</h5><ul><li>数据模型是对现实世界进行抽象的工具</li><li>抽象的程度不同，就形成不同抽象级别层次上的数据模型</li><li>与数据库的数据模型区别</li><li>不包含纯操作型的数据</li><li>增加了时间属性作为码结构的一部分</li><li>增加了一些导出数据</li></ul><p>分三级</p><ol><li><p>概念</p><p>常用E-R图进行表示</p><p>•矩形：表示实体/主题</p><p>•椭圆形：表示主题的属性</p><p>•菱形：表示主题之间的关系</p><p>•无向边：主题与属性，菱形与主题，菱形与属性等</p></li><li><p>逻辑</p><p>用关系模型</p><p>•关系：一个二维表</p><p>•元组：表中的一行</p><p>•属性：表中的一列</p><p>•主码：表中的某个属性组，其值唯一地标识一个元组</p><p>•域：属性的取值范围</p><p>•分量：元组中的一个属性组</p><p>•关系模式：对关系的描述</p><p>–关系名（属性名1，属性名2，…属性名n）</p></li><li><p>物理</p><p>•逻辑数据模型在数据仓库中的实现</p><p>•如物理存取方式、数据存放位置、存储分配等</p><p>•需要考虑I/O存取时间，空间利用率和维护代价等</p><p>•考虑到数据仓库的数据量大但是操作单一的特点，可采取其他一些提高数据仓库性能的技术</p><p>​    •合并表</p><p>​    •建立数据序列</p><p>​    •引入冗余</p><p>​    •进一步细分数据</p><p>​    •生成导出数据</p><p>​    •建立广义索引等</p></li></ol><h4 id="数据仓库的设计步骤"><a href="#数据仓库的设计步骤" class="headerlink" title="数据仓库的设计步骤"></a>数据仓库的设计步骤</h4><p>数据仓库的设计是<em>数据驱动</em>的</p><p><strong>原型法</strong>：从构建系统简单的基本框架着手，不断丰富与完善整个系统</p><p>分为以下几个步骤</p><ul><li>概念模型设计</li><li>技术准备工作</li><li>逻辑模型设计</li><li>物理模型设计</li><li>数据仓库生成</li><li>数据仓库运行与维护</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+      <category term="数据挖掘" scheme="http://bbxren.site/categories/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/"/>
+    
+    
+      <category term="数据挖掘" scheme="http://bbxren.site/tags/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/"/>
+    
+  </entry>
   
   <entry>
     <title>Apriori算法</title>

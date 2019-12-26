@@ -1,0 +1,259 @@
+<!DOCTYPE html><html lang="zh-Hans" data-theme="light"><head><meta name="generator" content="Hexo 3.8.0"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>数据仓库与数据挖掘概述 | 是王文徽徽徽呀！</title><meta name="description" content="数据仓库与数据挖掘概述"><meta name="keywords" content="数据挖掘"><meta name="author" content="Bbxren"><meta name="copyright" content="Bbxren"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="preconnect" href="//cdn.jsdelivr.net"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="数据仓库与数据挖掘概述"><meta name="twitter:description" content="数据仓库与数据挖掘概述"><meta name="twitter:image" content="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2827808333,716891600&amp;fm=26&amp;gp=0.jpg"><meta property="og:type" content="article"><meta property="og:title" content="数据仓库与数据挖掘概述"><meta property="og:url" content="http://bbxren.site/2019/12/26/数据挖掘/数据仓库与数据挖掘概述/"><meta property="og:site_name" content="是王文徽徽徽呀！"><meta property="og:description" content="数据仓库与数据挖掘概述"><meta property="og:image" content="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2827808333,716891600&amp;fm=26&amp;gp=0.jpg"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>const autoChangeMode = 'true'
+var t = Cookies.get("theme");
+if (autoChangeMode == '1'){
+const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+const isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
+const isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
+const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+if (t === undefined){
+  if (isLightMode) activateLightMode()
+  else if (isDarkMode) activateDarkMode()
+  else if (isNotSpecified || hasNoSupport){
+    console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+    now = new Date();
+    hour = now.getHours();
+    isNight = hour < 6 || hour >= 18
+    isNight ? activateDarkMode() : activateLightMode()
+}
+} else if (t == 'light') activateLightMode()
+else activateDarkMode()
+
+
+} else if (autoChangeMode == '2'){
+  now = new Date();
+  hour = now.getHours();
+  isNight = hour < 6 || hour >= 18
+  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode() 
+} else {
+  if ( t == 'dark' ) activateDarkMode()
+  else if ( t == 'light') activateLightMode()
+}
+
+function activateDarkMode(){
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
+  }
+}
+function activateLightMode(){
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
+  }
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="canonical" href="http://bbxren.site/2019/12/26/数据挖掘/数据仓库与数据挖掘概述/"><link rel="next" title="Apriori算法" href="http://bbxren.site/2019/12/26/算法/Apriori算法/"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight_copy: 'false',
+  highlight_lang: 'true',
+  highlight_shrink: 'false',
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  bookmark: {
+    title: 'Snackbar.bookmark.title',
+    message_prev: 'Press',
+    message_next: 'to bookmark this page'
+  },
+  runtime_unit: 'days',
+  copyright: undefined,
+  copy_copyright_js: false,
+  ClickShowText: undefined,
+  medium_zoom: 'false',
+  Snackbar: undefined
+  
+}</script></head><body><div id="header"> <div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">是王文徽徽徽呀！</a></span><i class="fa fa-bars fa-fw toggle-menu pull_right close" aria-hidden="true"></i><span class="pull_right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/gallery/"><i class="fa-fw fa fa-heart"></i><span> Gallery</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> List</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> Music</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> Movie</span></a></li></ul></div></div></span><span class="pull_right" id="search_button"></span></div></div><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="lazyload avatar_img" src="https://ftp.bmp.ovh/imgs/2019/12/7711d5895ad274d3.jpg" onerror="onerror=null;src='/img/friend_404.gif'"></div><div class="mobile_post_data"><div class="mobile_data_item is_center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">Articles</div><div class="length_num">6</div></a></div></div><div class="mobile_data_item is_center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">Tags</div><div class="length_num">6</div></a></div></div><div class="mobile_data_item is_center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">Categories</div><div class="length_num">3</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/gallery/"><i class="fa-fw fa fa-heart"></i><span> Gallery</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> List</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> Music</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> Movie</span></a></li></ul></div></div></div><div id="mobile-sidebar-toc"><div class="toc_mobile_headline">Catalog</div><ol class="toc_mobile_items"><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#数据仓库与数据挖掘概述"><span class="toc_mobile_items-number">1.</span> <span class="toc_mobile_items-text">数据仓库与数据挖掘概述</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-4"><a class="toc_mobile_items-link" href="#数据挖掘"><span class="toc_mobile_items-number">1.1.</span> <span class="toc_mobile_items-text">数据挖掘</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-5"><a class="toc_mobile_items-link" href="#数据挖掘步骤"><span class="toc_mobile_items-number">1.1.1.</span> <span class="toc_mobile_items-text">数据挖掘步骤</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-5"><a class="toc_mobile_items-link" href="#数据挖掘的功能"><span class="toc_mobile_items-number">1.1.2.</span> <span class="toc_mobile_items-text">数据挖掘的功能</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-4"><a class="toc_mobile_items-link" href="#数据仓库"><span class="toc_mobile_items-number">1.2.</span> <span class="toc_mobile_items-text">数据仓库</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-5"><a class="toc_mobile_items-link" href="#基本特征"><span class="toc_mobile_items-number">1.2.1.</span> <span class="toc_mobile_items-text">基本特征</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-5"><a class="toc_mobile_items-link" href="#体系结构"><span class="toc_mobile_items-number">1.2.2.</span> <span class="toc_mobile_items-text">体系结构</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-5"><a class="toc_mobile_items-link" href="#数据组织形式"><span class="toc_mobile_items-number">1.2.3.</span> <span class="toc_mobile_items-text">数据组织形式</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-5"><a class="toc_mobile_items-link" href="#数据模型"><span class="toc_mobile_items-number">1.2.4.</span> <span class="toc_mobile_items-text">数据模型</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-4"><a class="toc_mobile_items-link" href="#数据仓库的设计步骤"><span class="toc_mobile_items-number">1.3.</span> <span class="toc_mobile_items-text">数据仓库的设计步骤</span></a></li></ol></li></ol></div></div><div id="body-wrap"><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true">     </i><div class="auto_open" id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">Catalog</div><div class="sidebar-toc__progress"><span class="progress-notice">You've read</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#数据仓库与数据挖掘概述"><span class="toc-number">1.</span> <span class="toc-text">数据仓库与数据挖掘概述</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#数据挖掘"><span class="toc-number">1.1.</span> <span class="toc-text">数据挖掘</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#数据挖掘步骤"><span class="toc-number">1.1.1.</span> <span class="toc-text">数据挖掘步骤</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#数据挖掘的功能"><span class="toc-number">1.1.2.</span> <span class="toc-text">数据挖掘的功能</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#数据仓库"><span class="toc-number">1.2.</span> <span class="toc-text">数据仓库</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#基本特征"><span class="toc-number">1.2.1.</span> <span class="toc-text">基本特征</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#体系结构"><span class="toc-number">1.2.2.</span> <span class="toc-text">体系结构</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#数据组织形式"><span class="toc-number">1.2.3.</span> <span class="toc-text">数据组织形式</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#数据模型"><span class="toc-number">1.2.4.</span> <span class="toc-text">数据模型</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#数据仓库的设计步骤"><span class="toc-number">1.3.</span> <span class="toc-text">数据仓库的设计步骤</span></a></li></ol></li></ol></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2827808333,716891600&amp;fm=26&amp;gp=0.jpg)"><div id="post-info"><div id="post-title"><div class="posttitle">数据仓库与数据挖掘概述</div></div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> Created 2019-12-26<span class="post-meta__separator">|</span><i class="fa fa-history" aria-hidden="true"></i> Updated 2019-12-27</time><span class="post-meta__separator mobile_hidden">|</span><span class="mobile_hidden"><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/数据挖掘/">数据挖掘</a></span><div class="post-meta-wordcount"><i class="fa fa-eye post-meta__icon" aria-hidden="true">       </i><span>Post View: </span><span id="busuanzi_value_page_pv"></span></div></div></div></div><div class="layout layout_post" id="content-inner">   <article id="post"><div class="article-container" id="post-content"><h3 id="数据仓库与数据挖掘概述"><a href="#数据仓库与数据挖掘概述" class="headerlink" title="数据仓库与数据挖掘概述"></a>数据仓库与数据挖掘概述</h3><h4 id="数据挖掘"><a href="#数据挖掘" class="headerlink" title="数据挖掘"></a>数据挖掘</h4><p>这学期选了数据仓库与数据挖掘概论，上课比较混，没怎么学到东西，下面做一个学习总结。</p>
+<p>数据挖掘主要应用于<strong>物联网</strong> <em>The Internet of Things</em>、<strong>云计算</strong> <em>Cloud Computing</em>以及<strong>大数据</strong> <em>Big Data</em></p>
+<p>数据挖掘来源于于机器学习和知识工程，其中涉及到很多专业名词，我并没有相关的实践经验，也了解的不是很清楚，总的来说，数据挖掘就是从大量的、不完全的、有噪声的、模糊的、随机的数据中，提取隐含在其中的、人们事先不知道的、但又是潜在有用的信息和知识的过程，就是从数据中挖掘知识。</p>
+<p>其中数据来源可以是结构化的，比如关系数据库中的数据，也可以是半结构化的文本、图形、图像数据等。</p>
+<h5 id="数据挖掘步骤"><a href="#数据挖掘步骤" class="headerlink" title="数据挖掘步骤"></a>数据挖掘步骤</h5><p><img alt="" data-src="https://ftp.bmp.ovh/imgs/2019/12/d04adc04ef29abd0.png" class="lazyload"></p>
+<p>整个过程还是清晰明了的（JIAWEI HAN）</p>
+<p><img alt="" data-src="https://upload.cc/i1/2019/12/27/rZ9FDf.png" class="lazyload"></p>
+<p>数据清理(Data Cleaning):消除噪声或不一致数据；</p>
+<p>数据集成(Data Integration):多种数据源组合在一起；</p>
+<p>数据选择(Data Selection):从数据库中检索与分析任务相关的数据；</p>
+<p>数据变换(Data Transformation):数据变换或统一成适合挖掘的形式，如通过汇总或聚集操作；</p>
+<p>数据挖掘(Data Mining):使用智能方法提取数据模式；</p>
+<p>模式评估(Data Evaluation):根据某种兴趣度度量，识别表示知识的真正有趣的模式；</p>
+<p>知识表示(Knowledge presentation)：使用可视化和知识表示技术，向用户提供挖掘的知识；</p>
+<h5 id="数据挖掘的功能"><a href="#数据挖掘的功能" class="headerlink" title="数据挖掘的功能"></a>数据挖掘的功能</h5><p><strong>关联分析</strong></p>
+<p>•若两个或多个变量间存在着某种规律性，称为关联</p>
+<p>•分简单关联、时序关联、因果关联</p>
+<p>•从大量的数据中发现项集之间有趣的联系、相关关系或因果结构，以及项集的频繁模式</p>
+<p>比如<em>啤酒与尿布</em></p>
+<p><strong>分类与预测</strong></p>
+<p>•分类：提出一个分类函数或者分类模型，该模型能把数据库中的数据项映射到给定的类别中的一个。</p>
+<p>•需要有一个训练样本数据集作为输入</p>
+<p>•预测：利用历史数据建立模型，再运用最新数据作为输入值，获得未来变化的趋势或者评估给定样本可能具有的属性或值的范围。</p>
+<p>比如<em>决策树、K-最临近分类法</em></p>
+<p><strong>聚类分析</strong></p>
+<p><strong>偏差分析</strong></p>
+<h4 id="数据仓库"><a href="#数据仓库" class="headerlink" title="数据仓库"></a>数据仓库</h4><p>数据仓库是面向主题的、集成的、具有时间特征的、稳定的数据集合，用以支持经营管理中的决策制定过程。</p>
+<p><img alt="" data-src="https://ftp.bmp.ovh/imgs/2019/12/0f680637b5bdeb4c.png" class="lazyload"></p>
+<p>我的理解就是数据仓库为数据挖掘所服务，给数据挖掘提供更好的数据源以及更好的平台和便利性。</p>
+<p>反正看了一大堆应用案例，数据挖掘对用户行为的分析等十分有效，也是让机器更了解人类使用习惯的过程，我觉得这之中良好的数据源和Data Mining的方法至关重要。</p>
+<h5 id="基本特征"><a href="#基本特征" class="headerlink" title="基本特征"></a>基本特征</h5><ol>
+<li><p>数据是面向主题的</p>
+<p>就是说，和面向于应用的传统数据库，数据仓库以主题为核心，你要挖掘要分析，必须有一个对象和主题，并且丢弃了不必要的信息，和数据库来比较，我觉得它太智能了，并且有很高的商业价值，另外，数据仓库仍是采用关系数据库技术来实现，即数据仓库的数据最终也表现为关系。</p>
+</li>
+<li><p>数据是集成的</p>
+<p>统一源数据（命名，编码、单位等）</p>
+<p>综合与计算（年月日时…)</p>
+</li>
+<li><p>数据是不可更新的</p>
+<p>仅提供查询</p>
+</li>
+<li><p>数据是随时间不断变化的</p>
+<p>增加新内容，删除旧内容</p>
+</li>
+</ol>
+<h5 id="体系结构"><a href="#体系结构" class="headerlink" title="体系结构"></a>体系结构</h5><p><img alt="" data-src="https://ftp.bmp.ovh/imgs/2019/12/9a7ef23d04fca99b.png" class="lazyload"></p>
+<ul>
+<li><p>信息获取层</p>
+<p>收集、提取、净化、聚合</p>
+</li>
+<li><p>信息存储层</p>
+<p>保存</p>
+</li>
+<li><p>信息传递层</p>
+<p>报表</p>
+<p>图表</p>
+<p>又称展示层、应用层</p>
+</li>
+</ul>
+<p>数据仓库中的数据分为多个级别</p>
+<p>数据仓库中存在的不同综合级别，称其为<em>粒度</em>（granularity）</p>
+<p><strong>粒度</strong></p>
+<ul>
+<li>指数据仓库的数据单位中保存数据细化或综合程度的级别</li>
+<li><p>粒度影响存放在数据仓库中的数据量的大小，同时影响数据仓库所能回答查询问题的细节程度和响应速度，就是说这个数据有没有细节，够不够<em>细</em></p>
+</li>
+<li><p>冗余</p>
+</li>
+</ul>
+<p><strong>元数据</strong></p>
+<ul>
+<li>关于数据的数据</li>
+<li>如传统数据库中的<em>数据字典</em></li>
+<li>可对数据仓库中的各种数据进行详细的描述与说明，说明每个数据的上下文关系，使每个数据具有符合现实的真实含义，使最终用户了解这些数据之间的关系</li>
+<li>方便数据仓库的组织、检索和加载</li>
+</ul>
+<p><strong>分割问题</strong></p>
+<ul>
+<li><p>将数据分散到各自的物理单元中，以便能独立处理，以提高数据处理效率</p>
+</li>
+<li><p>数据分割后的数据单元称为分片</p>
+</li>
+<li><p>将具有相关性的数据组织在一起，就会提高效率</p>
+</li>
+<li><p>如某一时间，某一时段的数据，某一地区的数据，特定业务领域的数据</p>
+<p><em>分割的标准</em></p>
+<p>•时间</p>
+<p>•商业领域</p>
+<p>•地理位置</p>
+<p>•组织单位</p>
+<p><em>分割的优越性</em></p>
+<p>•容易重构</p>
+<p>•自由索引</p>
+<p>•顺序扫描</p>
+<p>•容易恢复</p>
+<p>•容易监控</p>
+<p><em>分割的层次</em></p>
+<p>•分为系统层和应用层</p>
+<p>•系统层的分割由数据库管理系统和操作系统完成</p>
+<p>•应用层的分割由应用程序完成，在应用层上的分割更有意义——DM</p>
+</li>
+</ul>
+<h5 id="数据组织形式"><a href="#数据组织形式" class="headerlink" title="数据组织形式"></a>数据组织形式</h5><ol>
+<li><p>简单堆积结构</p>
+<p>就是每天往后加数据</p>
+</li>
+<li><p>轮转综合结构</p>
+<p> 就是分年月周日级别，每天加数据，到下一个级别汇总覆盖低级数据</p>
+</li>
+<li><p>简单直接结构</p>
+<p>就是我想什么时候加数据就什么时候加，一周一次，一月一次都行</p>
+</li>
+<li><p>连续结构</p>
+<p>通过两个或更多连续的简单直接结构数据组织形式的文件，可以生成另一种连续结构数据组织形式的文件，就比如一个等差数列和另一个等差数列合成一个等差数列</p>
+</li>
+</ol>
+<h5 id="数据模型"><a href="#数据模型" class="headerlink" title="数据模型"></a>数据模型</h5><ul>
+<li>数据模型是对现实世界进行抽象的工具</li>
+<li>抽象的程度不同，就形成不同抽象级别层次上的数据模型</li>
+<li>与数据库的数据模型区别</li>
+<li>不包含纯操作型的数据</li>
+<li>增加了时间属性作为码结构的一部分</li>
+<li>增加了一些导出数据</li>
+</ul>
+<p>分三级</p>
+<ol>
+<li><p>概念</p>
+<p>常用E-R图进行表示</p>
+<p>•矩形：表示实体/主题</p>
+<p>•椭圆形：表示主题的属性</p>
+<p>•菱形：表示主题之间的关系</p>
+<p>•无向边：主题与属性，菱形与主题，菱形与属性等</p>
+</li>
+<li><p>逻辑</p>
+<p>用关系模型</p>
+<p>•关系：一个二维表</p>
+<p>•元组：表中的一行</p>
+<p>•属性：表中的一列</p>
+<p>•主码：表中的某个属性组，其值唯一地标识一个元组</p>
+<p>•域：属性的取值范围</p>
+<p>•分量：元组中的一个属性组</p>
+<p>•关系模式：对关系的描述</p>
+<p>–关系名（属性名1，属性名2，…属性名n）</p>
+</li>
+<li><p>物理</p>
+<p>•逻辑数据模型在数据仓库中的实现</p>
+<p>•如物理存取方式、数据存放位置、存储分配等</p>
+<p>•需要考虑I/O存取时间，空间利用率和维护代价等</p>
+<p>•考虑到数据仓库的数据量大但是操作单一的特点，可采取其他一些提高数据仓库性能的技术</p>
+<p>​    •合并表</p>
+<p>​    •建立数据序列</p>
+<p>​    •引入冗余</p>
+<p>​    •进一步细分数据</p>
+<p>​    •生成导出数据</p>
+<p>​    •建立广义索引等</p>
+</li>
+</ol>
+<h4 id="数据仓库的设计步骤"><a href="#数据仓库的设计步骤" class="headerlink" title="数据仓库的设计步骤"></a>数据仓库的设计步骤</h4><p>数据仓库的设计是<em>数据驱动</em>的</p>
+<p><strong>原型法</strong>：从构建系统简单的基本框架着手，不断丰富与完善整个系统</p>
+<p>分为以下几个步骤</p>
+<ul>
+<li>概念模型设计</li>
+<li>技术准备工作</li>
+<li>逻辑模型设计</li>
+<li>物理模型设计</li>
+<li>数据仓库生成</li>
+<li>数据仓库运行与维护</li>
+</ul>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">Bbxren</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://bbxren.site/2019/12/26/数据挖掘/数据仓库与数据挖掘概述/">http://bbxren.site/2019/12/26/数据挖掘/数据仓库与数据挖掘概述/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/数据挖掘/">数据挖掘    </a></div><div class="post_share"><div class="social-share" data-image="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2827808333,716891600&amp;fm=26&amp;gp=0.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/js/social-share.min.js"></script></div></div><div class="post-reward"><a class="reward-button"><i class="fa fa-qrcode"></i> Donate<div class="reward-main"><ul class="reward-all"><li class="reward-item"><img class="lazyload post-qr-code__img" src="/img/wechat.jpg"><div class="post-qr-code__desc">微信</div></li><li class="reward-item"><img class="lazyload post-qr-code__img" src="/img/alipay.jpg"><div class="post-qr-code__desc">支付寶</div></li></ul></div></a></div><nav class="pagination_post" id="pagination"><div class="next-post pull-full"><a href="/2019/12/26/算法/Apriori算法/"><img class="next_cover lazyload" data-src="https://upload.cc/i1/2019/12/26/Gop4rL.png" onerror="onerror=null;src='/img/404.jpg'"><div class="label">Next Post</div><div class="next_info"><span>Apriori算法</span></div></a></div></nav><div class="relatedPosts"><div class="relatedPosts_headline"><i class="fa fa-fw fa-thumbs-up" aria-hidden="true"></i><span> Recommend</span></div><div class="relatedPosts_list"><div class="relatedPosts_item"><a href="/2019/12/26/算法/Apriori算法/" title="Apriori算法"><img class="relatedPosts_cover lazyload" data-src="https://upload.cc/i1/2019/12/26/Gop4rL.png"><div class="relatedPosts_title">Apriori算法</div></a></div></div><div class="clear_both"></div></div><hr><div id="post-comment"><div class="comment_headling"><i class="fa fa-comments fa-fw" aria-hidden="true"></i><span> Comment</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var notify = false == true ? true : false;
+var verify = false == true ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'77RGhfkwzAEUsh8mTDb9jkLu-gzGzoHsz',
+  appKey:'cJU2QPC7nLyNfGaiTvMvFHLt',
+  placeholder:'Please leave your footprints',
+  avatar:'monsterid',
+  guest_info:guest_info,
+  pageSize:'10',
+  lang:'zh-cn',
+  recordIP: true
+});</script></div></div></div><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2018 - 2019 By Bbxren</div><div class="framework-info"><span>Driven </span><a href="http://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>Theme </span><a href="https://github.com/jerryc127/hexo-theme-butterfly"><span>Butterfly</span></a></div><div class="footer_custom_text">Hi, welcome to my bolg!</div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="Read Mode"></i><i class="fa fa-plus" id="font_plus" title="Increase font size"></i><i class="fa fa-minus" id="font_minus" title="Decrease font size"></i><i class="darkmode fa fa-moon-o" id="darkmode" title="Dark Mode"></i></div><div id="rightside-config-show"><div id="rightside_config" title="Setting"><i class="fa fa-cog" aria-hidden="true"></i></div><a id="to_comment" href="#post-comment" title="Scroll to comment"><i class="scroll_to_comment fa fa-comments">  </i></a><i class="fa fa-list-ul close" id="mobile-toc-button" title="Table of Contents" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="Back to top" aria-hidden="true"></i></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script id="ribbon_piao" mobile="false" src="/js/third-party/piao.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async></script><script src="/js/third-party/click_heart.js"></script><script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false,"aplayer":null},"meting":true,"asset_inject":true,"log":false,"pluginJsPath":"lib/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>
