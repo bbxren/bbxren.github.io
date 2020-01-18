@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://bbxren.site/"/>
-  <updated>2020-01-18T17:02:37.356Z</updated>
+  <updated>2020-01-18T17:39:24.690Z</updated>
   <id>http://bbxren.site/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://bbxren.site/2020/01/19/%E8%AE%BE%E8%AE%A1/%E5%90%8D%E7%89%87%E3%80%81%E4%BB%A3%E9%87%91%E5%88%B8%E8%AE%BE%E8%AE%A1/"/>
     <id>http://bbxren.site/2020/01/19/设计/名片、代金券设计/</id>
     <published>2020-01-18T16:54:19.000Z</published>
-    <updated>2020-01-18T17:02:37.356Z</updated>
+    <updated>2020-01-18T17:39:24.690Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="名片、代金券设计"><a href="#名片、代金券设计" class="headerlink" title="名片、代金券设计"></a>名片、代金券设计</h3><h4 id="名片设计规范"><a href="#名片设计规范" class="headerlink" title="名片设计规范"></a>名片设计规范</h4><ol><li>常规名片尺寸: 90MM 54MM特种纸名片尺寸: 90MM 54MM PVC名片尺寸: 88.5MM 57MM</li><li>印刷品必须颜色模式: CMYK </li><li>分辨率:不低于300!或者450、600</li><li>背景大面积黑色色值: C: 30 M: 0 Y: 0 K: 100</li><li>背景颜色CMYK色值尽量不要超过250，别太轴，能避免就避免,避免不了就别改了</li><li>后工艺必须要矢量图，比如OGO烫金烫印凹凸等工艺LOGO必须是矢量图</li><li>透明文件做一面</li><li>特种纸名片，最好不要满版印色，容易掉色</li><li>字体正常是7号字，最小不要低于6，不然印出来模糊</li><li>黑色字体必须是单色黑C: 0 M: 0Y: 0 K: 100 或者90或者80,切记不能四色黑!</li><li>AI做完图记得转曲，图片一定要嵌入， AI保存JPG一定要导出—— 导出为-JPG(不要导出WEB)，一定要品质最高</li></ol><h5 id="常用快捷键"><a href="#常用快捷键" class="headerlink" title="常用快捷键"></a>常用快捷键</h5><ul><li>转曲——C  S  O  文字转化为形状 ——不变形不丢失</li><li>编组——C  G  取消编组  C   S  G</li><li>视图——勾选智能参考线</li><li>没圆角——视图勾选边角构建</li><li>对齐——S   F7 ——对齐画板——显示选项</li><li>置顶：C  S  ]  置底：C  S  [</li><li>上锁 C   2  解锁 C  A   2</li><li>参考线——C   R  上锁参考线  ——右键 锁定  </li><li>安全区——4MM   <em>按工厂</em></li><li>原位复制——C  C    C  F</li><li>再置  再次变换 c   d  </li><li>形状生成器 S  M ——按住ALT 是减选</li></ul><p><em>[tips]导出之前——多保存一个未转曲的源文件— 导出导出为——勾选JPG  ——使用画板—— 品质最高——颜色模式CMYK ——分辨率300——确定</em></p><h4 id="代金券设计规范"><a href="#代金券设计规范" class="headerlink" title="代金券设计规范"></a>代金券设计规范</h4><h5 id="常用尺寸"><a href="#常用尺寸" class="headerlink" title="常用尺寸"></a>常用尺寸</h5><ul><li><p>180MM 54MM</p></li><li><p>90MM 165MM</p></li><li><p>160MM 68MM</p></li><li><p>35MM 54MM</p><p><em>其他尺寸根据客户要求</em></p></li></ul><h5 id="代金券工艺"><a href="#代金券工艺" class="headerlink" title="代金券工艺"></a>代金券工艺</h5><ol><li>压点线/手撕线/米线/点线/撕线</li><li>打单码:00001或者NO:00001<br>打双码:0000001或者NO:0000001<br>(不能正面一个码,背面一个码,必须再一面)</li><li>副券宽度根据打码来决定<br>7位数带NO的打码,宽度40mm<br>5位数带NO的打码,宽度30mm<br>(越宽越好,但是也要注意整体比例)</li><li>打码字体大小:13号字</li><li>打码颜色:黑色红色金色</li><li>双码间距左右不小于18MM,上下间距不小于40MM</li><li>烫金烫银等工艺一一中文不小于7号,英文不小于9号<br>(字体大小范围超过2 MM的圆形)<br>条粗细不小于0.3MM</li></ol><h5 id="常用快捷键-1"><a href="#常用快捷键-1" class="headerlink" title="常用快捷键"></a>常用快捷键</h5><ul><li>虚线——直线段工具——描边打开——勾选虚线——</li><li>编组快捷键—— C  G   取消编组——右键取消 C  S  G </li><li>剪切蒙版——上范围——下效果——同时选中——C  7 （顺序和PS相反）</li><li>文字烫金方法1:  上文字 ——下烫金（素材要嵌入）——同时选中C 7——选中转曲</li><li>文字烫金方法2:   文字转曲——C 8 （转化为符合路径——多个路径合并成一个路径）——文字上——素材下——同时选中——C 7 </li></ul><p><img alt="" data-src="https://i.loli.net/2020/01/19/S1UvOw2KQjkCfM7.png" class="lazyload"><br><img alt="" data-src="https://i.loli.net/2020/01/19/CJot3h9zuUaDLQ4.png" class="lazyload"><br><img alt="" data-src="https://i.loli.net/2020/01/19/Dluqf5dTsbWjRPy.png" class="lazyload"><br><img alt="" data-src="https://i.loli.net/2020/01/19/LfKrzJVqXkahtpY.png" class="lazyload"><br><img alt="" data-src="https://i.loli.net/2020/01/19/I5nlrQBFYz2mPLe.png" class="lazyload"></p>]]></content>
     
