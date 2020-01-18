@@ -1,0 +1,142 @@
+<!DOCTYPE html><html lang="zh-Hans" data-theme="light"><head><meta name="generator" content="Hexo 3.8.0"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>关于Hexo搭建博客的心得与搭建笔记 | 是王文徽徽徽呀！</title><meta name="description" content="简单的博客历程"><meta name="keywords" content="hexo"><meta name="author" content="Bbxren"><meta name="copyright" content="Bbxren"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="preconnect" href="//cdn.jsdelivr.net"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="关于Hexo搭建博客的心得与搭建笔记"><meta name="twitter:description" content="简单的博客历程"><meta name="twitter:image" content="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1579375905456&amp;di=521f1916d47d670d10cad903693d4d6d&amp;imgtype=0&amp;src=http%3A%2F%2Fpic2.zhimg.com%2Fv2-f9654b817205f6af3e472af284ecc2b2_1200x500.jpg"><meta property="og:type" content="article"><meta property="og:title" content="关于Hexo搭建博客的心得与搭建笔记"><meta property="og:url" content="http://bbxren.site/2020/01/18/博客/hexo/"><meta property="og:site_name" content="是王文徽徽徽呀！"><meta property="og:description" content="简单的博客历程"><meta property="og:image" content="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1579375905456&amp;di=521f1916d47d670d10cad903693d4d6d&amp;imgtype=0&amp;src=http%3A%2F%2Fpic2.zhimg.com%2Fv2-f9654b817205f6af3e472af284ecc2b2_1200x500.jpg"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>const autoChangeMode = 'true'
+var t = Cookies.get("theme");
+if (autoChangeMode == '1'){
+const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+const isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
+const isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
+const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+if (t === undefined){
+  if (isLightMode) activateLightMode()
+  else if (isDarkMode) activateDarkMode()
+  else if (isNotSpecified || hasNoSupport){
+    console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+    now = new Date();
+    hour = now.getHours();
+    isNight = hour < 6 || hour >= 18
+    isNight ? activateDarkMode() : activateLightMode()
+}
+} else if (t == 'light') activateLightMode()
+else activateDarkMode()
+
+
+} else if (autoChangeMode == '2'){
+  now = new Date();
+  hour = now.getHours();
+  isNight = hour < 6 || hour >= 18
+  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode() 
+} else {
+  if ( t == 'dark' ) activateDarkMode()
+  else if ( t == 'light') activateLightMode()
+}
+
+function activateDarkMode(){
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
+  }
+}
+function activateLightMode(){
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
+  }
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="canonical" href="http://bbxren.site/2020/01/18/博客/hexo/"><link rel="prev" title="Quiz 基本语法 及 变量" href="http://bbxren.site/2020/01/18/Python/pyDay2/"><link rel="next" title="蓝桥杯习题练习入门训练 C语言版" href="http://bbxren.site/2020/01/18/null/bluebr1/"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight_copy: 'false',
+  highlight_lang: 'true',
+  highlight_shrink: 'false',
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  bookmark: {
+    title: 'Snackbar.bookmark.title',
+    message_prev: 'Press',
+    message_next: 'to bookmark this page'
+  },
+  runtime_unit: 'days',
+  copyright: undefined,
+  copy_copyright_js: false,
+  ClickShowText: undefined,
+  medium_zoom: 'false',
+  Snackbar: undefined
+  
+}</script></head><body><div id="header"> <div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">是王文徽徽徽呀！</a></span><i class="fa fa-bars fa-fw toggle-menu pull_right close" aria-hidden="true"></i><span class="pull_right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/gallery/"><i class="fa-fw fa fa-heart"></i><span> Gallery</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> List</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> Music</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> Movie</span></a></li></ul></div></div></span><span class="pull_right" id="search_button"></span></div></div><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="lazyload avatar_img" src="https://upload.cc/i1/2019/12/31/PLWwJ6.jpg" onerror="onerror=null;src='/img/friend_404.gif'"></div><div class="mobile_post_data"><div class="mobile_data_item is_center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">Articles</div><div class="length_num">9</div></a></div></div><div class="mobile_data_item is_center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">Tags</div><div class="length_num">10</div></a></div></div><div class="mobile_data_item is_center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">Categories</div><div class="length_num">6</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/gallery/"><i class="fa-fw fa fa-heart"></i><span> Gallery</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> List</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> Music</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> Movie</span></a></li></ul></div></div></div><div id="mobile-sidebar-toc"><div class="toc_mobile_headline">Catalog</div><ol class="toc_mobile_items"><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#随笔"><span class="toc_mobile_items-number">1.</span> <span class="toc_mobile_items-text">随笔</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#关于Hexo搭建博客的心得与搭建笔记"><span class="toc_mobile_items-number">2.</span> <span class="toc_mobile_items-text">关于Hexo搭建博客的心得与搭建笔记</span></a></li></ol></div></div><div id="body-wrap"><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true">     </i><div class="auto_open" id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">Catalog</div><div class="sidebar-toc__progress"><span class="progress-notice">You've read</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#随笔"><span class="toc-number">1.</span> <span class="toc-text">随笔</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#关于Hexo搭建博客的心得与搭建笔记"><span class="toc-number">2.</span> <span class="toc-text">关于Hexo搭建博客的心得与搭建笔记</span></a></li></ol></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1579375905456&amp;di=521f1916d47d670d10cad903693d4d6d&amp;imgtype=0&amp;src=http%3A%2F%2Fpic2.zhimg.com%2Fv2-f9654b817205f6af3e472af284ecc2b2_1200x500.jpg)"><div id="post-info"><div id="post-title"><div class="posttitle">关于Hexo搭建博客的心得与搭建笔记</div></div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> Created 2020-01-18<span class="post-meta__separator">|</span><i class="fa fa-history" aria-hidden="true"></i> Updated 2020-01-19</time><span class="post-meta__separator mobile_hidden">|</span><span class="mobile_hidden"><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/博客/">博客</a></span><div class="post-meta-wordcount"><i class="fa fa-eye post-meta__icon" aria-hidden="true">       </i><span>Post View: </span><span id="busuanzi_value_page_pv"></span></div></div></div></div><div class="layout layout_post" id="content-inner">   <article id="post"><div class="article-container" id="post-content"><blockquote>
+<p>#20200119 通过coding实现了多电脑同步更新博客</p>
+<p>#20191231 新年快乐，配置了cloudflare，但是不太好用，关于gitpages访问加速，可以考虑出国的方式（滑稽）<img alt="" data-src="https://upload.cc/i1/2019/12/31/LRPalv.png" class="lazyload">,当然我也有了新的方案，之后会进行解决。</p>
+<p>#20191216 换电脑重新部署，域名过期，博客主题从Next换到Butterfly，之前的评论系统来必力到valine很遗憾导致评论全部丢失了，同时网站的访客数据和部分博客文章也找不到了。</p>
+</blockquote>
+<h3 id="随笔"><a href="#随笔" class="headerlink" title="随笔"></a>随笔</h3><p></p><p style="text-indent:2em">其实好早就搭了博客，却因为比较忙（借口）和一些其他原因（懒）,迟迟未让博客成形，最开始搭的博客也非常难看，现在还是决定再一次重新做人，认真学习，记录下自己成长的历程。虽然很多时候并没有养成一个记笔记、写博客的习惯，可能我更喜欢看到教程就立刻去做，并且享受做完之后的成就感，所以很难一边去截图一边去写笔记。不过还是觉得有这么一个习惯是很不错的，是对自己所学东西的一个审视，可能有的东西你在做的过程中很难注意到一些细节问题，但在做笔记的过程中你就会发现这些细小的，让你迷茫的东西。另外，看着自己的博文在时间线上一点点积累，就像是你给一颗种子一点点浇水、施肥。我期待着它长成参天大树的那一天。</p>
+<h3 id="关于Hexo搭建博客的心得与搭建笔记"><a href="#关于Hexo搭建博客的心得与搭建笔记" class="headerlink" title="关于Hexo搭建博客的心得与搭建笔记"></a>关于Hexo搭建博客的心得与搭建笔记</h3><p><em>Tips:</em>因为网上已经有了很详细的官方文档与教程，所以省去了很多没有必要的截图，仅作为个人记录日后查看。</p>
+<ol>
+<li><p><em>Hexo</em>(中文官方网站)是一个快速, 简洁且高效的博客框架. 让上百个页面在几秒内瞬间完成渲染（这些美化装饰网页的做法就称之为渲染）. Hexo支持Github Flavored Markdown的所有功能, 甚至可以整合Octopress的大多数插件. 并自己也拥有强大的插件系统。</p>
+</li>
+<li><p>hexo基于<em>node.js</em>,通过npm安装，<em>npm</em> 是 Node.js 平台的默认包管理工具，有了NPM，可以很快的找到特定服务要使用的包，进行下载、安装以及管理已经安装的包。</p>
+</li>
+<li><p>通过git bush 进行上传、编辑、部署等功能。</p>
+</li>
+<li><p>在GitHub上的Github Pages服务可以给我们提供一个静态网页的托管，以便远程浏览我们的博客内容。Github Pages是给开发者建立的私人页面，免费且没有空间流量限制。每个github账号都可以创建一个Github Pages项目，项目的名称必须是username.github.io</p>
+</li>
+<li><p>通过ssh将GitHub和Hexo进行连接</p>
+</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">"###"</span></span><br><span class="line">$ git config --global user.email <span class="string">"###"</span> <span class="comment">#初次设置git的邮箱和密码</span></span><br></pre></td></tr></table></figure>
+<p>   查看用户密码</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config  --global user.name</span><br><span class="line">$ git config  --global  user.e-mail</span><br></pre></td></tr></table></figure>
+<p>   查看本机是否有ssh key</p>
+   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ls -al ~/.ssh</span><br></pre></td></tr></table></figure>
+<p>   没有时生成</p>
+   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C “<span class="comment">###” </span></span><br><span class="line"></span><br><span class="line"><span class="comment">#SSH 为 Secure Shell 的缩写，提供两种口令或密钥两种验证，ssh-keygen为密钥验证</span></span><br><span class="line">参数说明</span><br><span class="line"><span class="comment">#-t rsa 指定密钥类型，可用DSA或RSA两种加密算法</span></span><br><span class="line"><span class="comment">#-b 密钥长度</span></span><br><span class="line"><span class="comment">#-C “ ”提供注释识别密钥，很多人填邮箱</span></span><br></pre></td></tr></table></figure>
+<p>   将公钥copy到github 的ssh keys中</p>
+<p>   测试连接github,注意这里的T要大写</p>
+   <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+<p>   在hexo blog项目根目录下里找到_config.yml文件，找到deploy</p>
+<p>   进行修改</p>
+<ol start="6">
+<li><p>hexo的使用</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init   <span class="comment">#初始化</span></span><br><span class="line">$ hexo g <span class="comment">#生成</span></span><br><span class="line">$ hexo s <span class="comment">#启动服务</span></span><br><span class="line">$ hexo d <span class="comment">#部署</span></span><br><span class="line">$ hexo clean <span class="comment">#</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>初始化结构如下</p>
+<p>.<br>├── _config.yml    网站配置信息<br>├── package.json  应用程序信息<br>├── scaffolds   模板，新建的文章文件中默认填充的内容<br>├── source 存放用户资源<br>├   ├── _drafts<br>├   └── _posts<br>└── themes</p>
+</blockquote>
+</li>
+<li><p>可以通过一些主题对博客进行美化，以及添加其他功能，如站点统计等。</p>
+</li>
+<li><p>购买域名</p>
+<p> 购买域名后，进入阿里云的管理控制台-域名与网站-域名就可以看到购买的域名此时的域名状态是未实名认证的，<img alt="" data-src="https://ftp.bmp.ovh/imgs/2019/12/7ad03dab5aa5994f.jpg" class="lazyload"></p>
+</li>
+<li><p>实名认证<br> 3.域名解析<br> 通过 DNS域名解析将购买的域名指向 github 的二级域名：bbxren.github.io，进入阿里云的管理控制台-域名与网站-云解析 DNS，进入域名的解析设置，点击确定就 OK 了。填完以后的解析列表会出现：<img alt="" data-src="https://ftp.bmp.ovh/imgs/2019/12/72de522a31ddf137.jpg" class="lazyload"></p>
+</li>
+</ol>
+<p>,在这里为了方便选择了CNAME型而不是A，记录值就是自己 github 的二级域名。</p>
+<p>设置CNAME<br>在 hexo 项目下，source 文件夹下面创建 CNAME 文件（没有后缀名的），在里面写上购买的域名。</p>
+<p>在 github 上面，打开bbxren.github.io 项目的（Settings）设置，然后在 GitHub Pages的 Custom domain设置里填上购买的域名，不用添加 <em>http://</em></p>
+<p>配置完成，等待后就可以访问了。<br><img alt="" data-src="/2020/01/18/博客/hexo/index.JPG" class="lazyload"></p>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">Bbxren</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://bbxren.site/2020/01/18/博客/hexo/">http://bbxren.site/2020/01/18/博客/hexo/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/hexo/">hexo    </a></div><div class="post_share"><div class="social-share" data-image="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1579375905456&amp;di=521f1916d47d670d10cad903693d4d6d&amp;imgtype=0&amp;src=http%3A%2F%2Fpic2.zhimg.com%2Fv2-f9654b817205f6af3e472af284ecc2b2_1200x500.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/js/social-share.min.js"></script></div></div><div class="post-reward"><a class="reward-button"><i class="fa fa-qrcode"></i> Donate<div class="reward-main"><ul class="reward-all"><li class="reward-item"><img class="lazyload post-qr-code__img" src="/img/wechat.jpg"><div class="post-qr-code__desc">微信</div></li><li class="reward-item"><img class="lazyload post-qr-code__img" src="/img/alipay.jpg"><div class="post-qr-code__desc">支付寶</div></li></ul></div></a></div><nav class="pagination_post" id="pagination"><div class="prev-post pull_left"><a href="/2020/01/18/Python/pyDay2/"><img class="prev_cover lazyload" data-src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=4111600323,3235941168&amp;fm=26&amp;gp=0.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="label">Previous Post</div><div class="prev_info"><span>Quiz 基本语法 及 变量</span></div></a></div><div class="next-post pull_right"><a href="/2020/01/18/null/bluebr1/"><img class="next_cover lazyload" data-src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1579376104545&amp;di=143f39cbfc7d543ba8e8ec383d946910&amp;imgtype=0&amp;src=http%3A%2F%2Fd.ifengimg.com%2Fw600%2Fe0.ifengimg.com%2F07%2F2018%2F1121%2FBC78BF89E566B76D20AB67C152F16DF218D66C37_size152_w887_h500.jpeg" onerror="onerror=null;src='/img/404.jpg'"><div class="label">Next Post</div><div class="next_info"><span>蓝桥杯习题练习入门训练 C语言版</span></div></a></div></nav><hr><div id="post-comment"><div class="comment_headling"><i class="fa fa-comments fa-fw" aria-hidden="true"></i><span> Comment</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var notify = false == true ? true : false;
+var verify = false == true ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'77RGhfkwzAEUsh8mTDb9jkLu-gzGzoHsz',
+  appKey:'cJU2QPC7nLyNfGaiTvMvFHLt',
+  placeholder:'Please leave your footprints',
+  avatar:'monsterid',
+  guest_info:guest_info,
+  pageSize:'10',
+  lang:'zh-cn',
+  recordIP: true
+});</script></div></div></div><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2018 - 2020 By Bbxren</div><div class="framework-info"><span>Driven </span><a href="http://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>Theme </span><a href="https://github.com/jerryc127/hexo-theme-butterfly"><span>Butterfly</span></a></div><div class="footer_custom_text">Hi, welcome to my bolg!</div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="Read Mode"></i><i class="fa fa-plus" id="font_plus" title="Increase font size"></i><i class="fa fa-minus" id="font_minus" title="Decrease font size"></i><i class="darkmode fa fa-moon-o" id="darkmode" title="Dark Mode"></i></div><div id="rightside-config-show"><div id="rightside_config" title="Setting"><i class="fa fa-cog" aria-hidden="true"></i></div><a id="to_comment" href="#post-comment" title="Scroll to comment"><i class="scroll_to_comment fa fa-comments">  </i></a><i class="fa fa-list-ul close" id="mobile-toc-button" title="Table of Contents" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="Back to top" aria-hidden="true"></i></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script id="ribbon_piao" mobile="false" src="/js/third-party/piao.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async></script><script src="/js/third-party/click_heart.js"></script><script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false,"aplayer":null},"meting":true,"asset_inject":true,"log":false,"pluginJsPath":"lib/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>
