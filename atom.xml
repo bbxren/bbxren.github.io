@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://bbxren.site/"/>
-  <updated>2020-01-18T17:39:24.690Z</updated>
+  <updated>2020-01-21T09:06:58.417Z</updated>
   <id>http://bbxren.site/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>二分查找</title>
+    <link href="http://bbxren.site/2020/01/20/%E7%AE%97%E6%B3%95/%E4%BA%8C%E5%88%86%E6%B3%95/"/>
+    <id>http://bbxren.site/2020/01/20/算法/二分法/</id>
+    <published>2020-01-20T11:49:04.000Z</published>
+    <updated>2020-01-21T09:06:58.417Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="二分查找"><a href="#二分查找" class="headerlink" title="二分查找"></a>二分查找</h1><p>比如你要查一个以P打头的通讯录用户，或者R开头的单词，都更适合从中间查找，这种算法就是二分查找。其输入是一个<strong>有序</strong>的元素列表，查找元素包含在列表中，返回该位置，否则返回null。<br>如果列表包含100个元素，简单查找最多需要100次，二分查找最多只需要7次；如果列表包含40亿个数字，二分查找最多只需要32次，即运行时间为<em>对数时间（log时间）</em>。</p><h2 id="大O表示法"><a href="#大O表示法" class="headerlink" title="大O表示法"></a>大O表示法</h2><p>指出了算法的速度<br>一些常见的大O运行时间：</p><ul><li>O(log n)，也叫对数时间，这样的算法包括二分查找。</li><li>O(n)，也叫线性时间，这样的算法包括简单查找。</li><li>O(n * log n)，这样的算法包括快速排序。</li><li>O(n²)，选择排序，速度较慢。</li><li>O(n!)，例如旅行商问题。<h2 id="简明代码"><a href="#简明代码" class="headerlink" title="简明代码"></a>简明代码</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">BinarySearch</span><span class="params">(<span class="keyword">int</span> len[],<span class="keyword">int</span> target,<span class="keyword">int</span> low,<span class="keyword">int</span> high)</span></span></span><br><span class="line"><span class="function"><span class="title">while</span><span class="params">(low &lt;= high)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> mid = low + (high-low) / <span class="number">2</span>;</span><br><span class="line">    <span class="keyword">if</span> (target == len[mid])&#123;</span><br><span class="line">        <span class="keyword">return</span> mid;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (target &lt; len[mid])</span><br><span class="line">        high = mid - <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">else</span> </span><br><span class="line">        low = mid + <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> null;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ul><p>二分法思想简单，数据量大时算法加速提升速度快，要求待查数据已被整理为有序列表。</p><h2 id="注意问题"><a href="#注意问题" class="headerlink" title="注意问题"></a>注意问题</h2><ol><li>数据范围：整型范围为-2³¹～2³¹-1，二分查找时如果使用<br><code>int mid = (high + low) / 2;</code><br>对于较大的low和high可能相加后超过范围，因此使用<br><code>int mid = low + (high-low) / 2;</code> </li><li>边界确定。<br>边界确定关系到二分查找算法的赋值与判断。如<code>high &gt; low</code>还是<code>high &gt;= low</code>，<code>high = mid</code>还是 <code>high = mid - 1</code><br>还有high的初值是n还是n-1(n指元素个数)，一旦错误，会导致死循环或者返回错误的情况，应该保持统一的开闭区间，比如high初值为n时，是左闭右开区间[low,high),取子序列也应该是左闭右开区间，<code>while( low&lt; high)</code>，以及<code>high = mid;</code>,子区间序列为[low,mid)，当high初始值为n-1，则与示例代码相同，子区间为[low,mid-1]。<br>3.二分查找的变形，现实问题大多是二分查找的变形，不会是简单的基础模型，例如查找重复出现的元素第一次/最后一次出现的位置，返回小于（大于）或等于目标元素的最大（小）元素等，针对不同问题修改相应的判断和赋值语句，需要注意以下几点：<ul><li>注意high和low的赋值，保证目标元素必然不在排除序列中。</li><li>每次二分过程注意low和high的赋值和循环条件判断，保证不会出现死循环，即要么排除元素序列减少，要么结束循环。</li><li>退出循环时，分析此时目标元素形态，确定返回位置的正确表达形式。<h2 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h2><h3 id="方程求解（POJ-4140）"><a href="#方程求解（POJ-4140）" class="headerlink" title="方程求解（POJ 4140）"></a>方程求解（POJ 4140）</h3></li></ul></li></ol><p>描述<br>求下面方程的根：f(x) = x3- 5x2+ 10x - 80 = 0。</p><p>输入<br>-<br>输出<br>精确到小数点后9位。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+      <category term="算法" scheme="http://bbxren.site/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="Algorithm" scheme="http://bbxren.site/tags/Algorithm/"/>
+    
+  </entry>
   
   <entry>
     <title>名片、代金券设计</title>
