@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://bbxren.site/"/>
-  <updated>2020-01-27T15:54:44.436Z</updated>
+  <updated>2020-01-21T14:33:03.774Z</updated>
   <id>http://bbxren.site/</id>
   
   <author>
@@ -15,52 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>广告设计概论与方法</title>
-    <link href="http://bbxren.site/2020/01/27/%E8%AE%BE%E8%AE%A1/%E5%B9%BF%E5%91%8A%E8%AE%BE%E8%AE%A1%E6%A6%82%E8%AE%BA%E4%B8%8E%E6%96%B9%E6%B3%95/"/>
-    <id>http://bbxren.site/2020/01/27/设计/广告设计概论与方法/</id>
-    <published>2020-01-27T15:50:55.000Z</published>
-    <updated>2020-01-27T15:54:44.436Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
-      
-    
-    </summary>
-    
-      <category term="设计" scheme="http://bbxren.site/categories/%E8%AE%BE%E8%AE%A1/"/>
-    
-    
-      <category term="Design 广告设计" scheme="http://bbxren.site/tags/Design-%E5%B9%BF%E5%91%8A%E8%AE%BE%E8%AE%A1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>选择排序</title>
-    <link href="http://bbxren.site/2020/01/27/null/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/"/>
-    <id>http://bbxren.site/2020/01/27/null/选择排序/</id>
-    <published>2020-01-27T03:39:50.000Z</published>
-    <updated>2020-01-27T03:39:50.942Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
-      
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>二分查找</title>
@@ -189,7 +143,7 @@
     <link href="http://bbxren.site/2019/12/31/%E5%8D%9A%E5%AE%A2/%E7%BB%99%E5%8D%9A%E5%AE%A2%E9%80%9A%E8%BF%87CDN%E5%AE%9E%E7%8E%B0%E8%AE%BF%E9%97%AE%E5%8A%A0%E9%80%9F%EF%BC%9F%E2%80%94%E2%80%94Cloudflare/"/>
     <id>http://bbxren.site/2019/12/31/博客/给博客通过CDN实现访问加速？——Cloudflare/</id>
     <published>2019-12-31T15:26:18.000Z</published>
-    <updated>2020-01-18T14:13:08.185Z</updated>
+    <updated>2020-06-24T08:55:52.311Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="给博客通过CDN实现访问加速？——Cloudflare"><a href="#给博客通过CDN实现访问加速？——Cloudflare" class="headerlink" title="给博客通过CDN实现访问加速？——Cloudflare"></a>给博客通过CDN实现访问加速？——Cloudflare</h3><p><strong><a href="https://baike.baidu.com/item/CDN" target="_blank" rel="noopener">CDN</a></strong>的全称是Content Delivery Network，即内容分发网络。CDN是构建在现有网络基础之上的智能虚拟网络，依靠部署在各地的边缘服务器，通过中心平台的负载均衡、内容分发、调度等功能模块，使用户就近获取所需内容，降低网络拥塞，提高用户访问响应速度和命中率。CDN的关键技术主要有内容存储和分发技术。<em>就跟物流中心一样，哪里离你近就给你从哪发货。</em></p><p><strong>Cloudflare</strong> 以向客户提供网站安全管理、性能优化及相关的技术支持为主要业务。提供包括CDN、优化工具、安全、分析以及应用等服务。并且与百度有合作，国内部署有大量的节点，以及处理 GitHub Pages 的问题。</p><ol><li><p>注册账号</p></li><li><p>注册好后点击 <code>Add site</code>添加域名</p><p><em>这里我遇到了提示域名未注册的问题导致无法添加，经过测试是DNS解析的问题，我把记录值从域名变成A类型的IP地址得以解决</em></p></li><li><p>等待解析完成后<code>continue</code></p></li><li><p><img alt="" data-src="https://upload.cc/i1/2019/12/31/UnW943.png" class="lazyload"></p></li></ol><p>然后他会让你修改DNS服务器，我的是阿里云域名控制台，阿里云的DNS服务器修改如图，修改完成，等待一段时间后生效。<em>bbxren.site is now queued up to be re-checked. Please check back in a few hours. You’ll also be notified by email once your site becomes active.</em></p><p><img alt="" data-src="https://upload.cc/i1/2019/12/31/zkpNBi.png" class="lazyload"></p><p>你也可以通过<a href="https://lookup.icann.org/lookup" target="_blank" rel="noopener">WHOIS</a>查看自己的网站信息判断是否修改成功。</p><p>（不过这个方案可能GG了）</p><p>whois之后我又发现好像这两篇文章的博主并没有用Cloudflare（？？？），另一个使用了的速度和gitpages没什么区别（可能是因为内陆节点的问题），不过解决了百度抓取的问题，还有考虑到浏览器缓存问题，等我的DNS服务器check完后会再进一步测试，至于部署到coding，gitee等其他方案等因为不稳定原因直接pass了，可能会考虑jsDelivr或者备案后打包到七牛吧。</p><p>还有就是hexo的编译速度可能会出现变慢的情况，后续（审美疲劳）的时候会考虑换成<em>Hugo，据说是目前世界第一快的（滑稽），由Go语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署</em>。</p><p>然后最近会解决考虑安全性下多台电脑和手机编写博客的问题。</p><p><a href="https://tding.top/archives/12c6c559.html" target="_blank" rel="noopener">参考文章1</a></p><p><a href="https://www.imhunk.com/cloudflare-tutorials/" target="_blank" rel="noopener">参考文章2</a></p><p><a href="https://mogeko.me/2019/056/" target="_blank" rel="noopener">使用了cloudflare的博客</a></p>]]></content>
     
